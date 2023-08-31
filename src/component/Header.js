@@ -11,7 +11,7 @@ const Header = (props)=>{
                     <li><Link to="/about">About Us</Link></li>
                 </ul>
             </nav>
-            <a className="cta" href="/about"><button>Contact Us</button></a>
+            <Link className="cta" to="/about"><button>Contact Us</button></Link>
         </header>
     )
 }
