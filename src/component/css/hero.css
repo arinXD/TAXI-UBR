@@ -22,6 +22,7 @@ section.hero{
     color: #333333;
     font-family: 'Poppins', sans-serif !important; 
     margin-bottom: .3em;
+    width: 600px;
 }
 .hero-img{
     background-image: url("../../../public/people.png");
