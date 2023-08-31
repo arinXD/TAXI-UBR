@@ -1,0 +1,25 @@
+/* design.css */
+
+.imgBox {
+    background-image: url('../img/takayai.jpg') ;
+    background-size: cover;
+    background-position: center 45%;
+    width: 97%;
+    z-index: -99;
+    height: 82vh;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: none;
+    /* Add more styles as needed */
+    position: absolute;
+    /* Set .imgBox to have relative positioning */
+    top: 43%; /* Move the box down by 50% of its parent's height */
+    left: 50%; /* Move the box right by 50% of its parent's width */
+    transform: translate(-50%, -50%); /* Center the box using negative translations */
+}
+
+
+.contain h1{
+    font-size: calc(3em + 0.390625vw); 
+}

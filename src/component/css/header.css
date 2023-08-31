@@ -1,0 +1,77 @@
+/* logo font */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
+/* content font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .hero{
+    position: relative;
+} */
+
+header span.logo a{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2em;
+    color: #77D4FC;
+    cursor: pointer;
+    user-select: none;
+    word-spacing: .4em;
+
+}
+
+header nav ul.nav_link,
+header a {
+    font-family: 'Lato', sans-serif;
+    font-size: .9em;
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    /* position: absolute; */
+    width: 100%; /* Ensure the header spans the entire width */
+}
+
+ul.nav_link {
+    list-style-type: none;
+}
+
+ul.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0 2em;
+}
+
+ul.nav_link li a {
+    transition: all 0.3s ease 0s;
+    color: #333333;
+    font-size: 1em;
+}
+
+ul.nav_link li a:hover {
+    color: #0088a9;
+}
+
+header a button {
+    padding: 12px 32px;
+    background-color: #FA8443;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 1em;
+    
+}
+
+header a button:hover {
+    background-color: #d87139;
+}

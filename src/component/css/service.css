@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.trend{
+    padding: 150px 80px 50px;
+}
+
+.trend .detail-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend .detail-wrap img{
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4%;
+    display: block;
+    margin-right: 5em;
+    object-position: 50% 50%;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.trend .detail-wrap div>h1{
+    color: #333333;
+    font-family: 'Poppins', sans-serif !important;
+    /* word-spacing: .55em; */
+    margin-bottom: .5em;
+    font-size: 2.5em;
+}
+.trend .detail-wrap div p{
+    margin: 2.5em 0 1em;
+}
+.trend .detail-wrap div p.describe{
+    color: #333333;
+    /* font-family: 'Poppins', sans-serif !important; */
+    word-spacing: .55em;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.detail-list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 16px;
+   margin-top: 1em;
+   margin-bottom: 1.5em;
+}
+.detail-list li i{
+    display: block;
+    color: #77D4FC;
+    font-size: 2em;
+    /* background-color: white; */
+    margin-right: .8em;
+    padding: 5px;
+}
+.detail-list li{
+    display: flex;
+    padding: 8px 20px;
+    width: 300px;
+    font-size: 16px;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    border-radius: 8px;
+    /* border: 1px solid rgba(230, 230, 230, 0.582); */
+    user-select: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.055) 0px 1px 3px 0px, rgba(0, 0, 0, 0.055) 0px 1px 2px 0px;
+}
+.detail-list li span{
+    color: #333333;
+}
+.detail-list li:hover{
+    background-color: #77D4FC;
+    transform: translateY(-10px);
+    border: 0px;
+}
+.detail-list li:hover i.bi-car-front-fill,
+.detail-list li:hover span{
+    color: white !important;
+
+}
