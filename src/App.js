@@ -8,13 +8,15 @@ import Vector from './component/Vector';
 
 function App() {
   return (
-    <div className='content'>
+    <div className='main'>
       <Vector/>
       <Header/>
-      <Hero/>
-      <Destination/>
-      <Content/>
-      <Map/>
+      <div className='content'>
+        <Hero/>
+        <Destination/>
+        <Content/>
+      </div>
+      {/* <Map/> */}
     </div>
   );
 }

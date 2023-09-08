@@ -3,65 +3,60 @@
 /* content font */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* .hero{
-    position: relative;
-} */
-
-header span.logo a{
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 2em;
-    color: #77D4FC;
-    cursor: pointer;
-    user-select: none;
-    word-spacing: .4em;
-
-}
-
-header nav ul.nav_link,
-header a {
+header{
     font-family: 'Lato', sans-serif;
-    font-size: .9em;
-    text-decoration: none;
-
-}
-
-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    /* position: absolute; */
-    width: 100%; /* Ensure the header spans the entire width */
-}
+    height: auto;
+    /* background-color: white; */
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 30px;
+    position: relative;
+    flex-direction: column;
 
-ul.nav_link {
-    list-style-type: none;
 }
-
-ul.nav_link li {
+.nav-toggle{
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    font-size: 30px;
     display: inline-block;
-    padding: 0px 20px;
-    margin: 0 2em;
+    /* transform: translate(-50%, -50%); */
+    
 }
-
-ul.nav_link li a {
-    transition: all 0.3s ease 0s;
+.nav-toggle i{
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+header .logo{
+    margin: 40px 0;
+}
+header a{
+    text-decoration: none;
     color: #333333;
-    font-size: 1em;
 }
 
-ul.nav_link li a:hover {
-    color: #0088a9;
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    
 }
-
-header a button {
-    padding: 12px 32px;
+nav ul li{
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-bottom-width: 1px;
+    padding: 5px 58px;
+    transition: all 0.3s ease 0s;
+}
+nav ul li a button {
+    padding: 10px 20px;
     background-color: #FA8443;
     border-radius: 8px;
     color: white;
@@ -72,6 +67,77 @@ header a button {
     
 }
 
-header a button:hover {
+nav ul li a button:hover {
     background-color: #d87139;
+}
+nav ul li:first-child{
+    margin-top: 0;
+}
+nav ul li:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+nav ul li:hover{
+    border-bottom-color: #0088a9 !important;
+}
+nav ul li:hover a{
+    color: #0088a9 !important;
+}
+.active{
+    display: flex;
+}
+.logo a{
+    font-size: .8em;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #77D4FC;
+    word-spacing: .4em;
+}
+.cta{
+    display: block;
+}
+@media screen and (max-width: 390px) {
+    .logo a{
+        font-size: .55em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .cta{
+        display: none;
+    }
+}
+@media screen and (min-width: 800px) {
+    
+    header{
+        height: 80px;
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 50px;
+        margin: 0;
+        flex: 1;
+        cursor: pointer;
+        user-select: none;
+    }
+    .logo a{
+        font-size: .7em;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        border-bottom: 0;
+        padding: 0;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
 }
