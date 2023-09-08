@@ -19,7 +19,7 @@ function App() {
           <Destination />
           <Content />
         </div>
-        <Map/>
+        {/* <Map/> */}
       </div>
 
       {/* ด้านล่างของกู */}
