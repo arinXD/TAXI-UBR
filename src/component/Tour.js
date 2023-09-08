@@ -1,6 +1,6 @@
 import Header from "./Header"
-import Travel from './component/Travel';
-import Nav from './component/Nav';
+import Travel from "./Travel"
+import Nav from "./Nav"
 const Tour = () => {
     return (
         <>
