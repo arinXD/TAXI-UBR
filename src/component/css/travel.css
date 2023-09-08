@@ -1,0 +1,127 @@
+/* design.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.maintravel{
+    font-family: 'Lato', sans-serif;
+}
+.contain{
+    overflow: hidden;
+    position: relative;
+    height: 85vh;
+    
+}
+.imgBox {
+    background-image: url('../img/takayai.jpg') ;
+    background-size: cover;
+    background-position: center 60%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: absolute;
+    border: 20px solid white;
+    border-radius: 50px; 
+    z-index: -10;
+    /* Set .imgBox to have relative positioning */
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.bg-shadow{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+.padding-top{
+    padding-top: 50px;
+}
+
+.contain h1{
+    font-size: calc(3em + 0.390625vw); 
+}
+
+.padding-right{
+    padding-right: 10%;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+.text-just{
+    text-align: justify !important;
+}
+.right-0{
+    text-align: right;
+}
+.w-cus{
+    width: 97%;
+    margin: 0 auto;
+}
+.bg-sky{
+    /* background-color: red; */
+    background-color: #F0F6FF !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+.border-img{
+    border-radius: 15px !important;
+    border: none !important;
+}
+.card-img{
+    height: 50% !important;
+}
+.row > *{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.mw-img{
+    max-width: 540px;
+}
+.embed-map{
+    padding-right: 10%;
+}
+.embed-map iframe{
+    border: none;
+}
+.accordion-body{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+@media screen and (max-width:767px) {
+    .contain{
+        overflow:auto;
+        position: relative;
+        height: 50vh;
+    }
+    .imgBox {
+        background-image: url('../img/takayai.jpg') ;
+        background-size: cover;
+        background-position: center 60%;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        position: absolute;
+        border: none;
+        border-radius: 0px;
+        z-index: -10;
+        /* Set .imgBox to have relative positioning */
+        top: 20%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    .margin-top{
+        margin-top: -6em;
+    }
+    .padding-right{
+        padding-right: 0%;
+    }
+    .embed-map{
+        padding-right: 0%;
+    }
+    .container{
+        padding-right: 3em !important;
+        padding-left: 3em !important;
+    }
+
+}
