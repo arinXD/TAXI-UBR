@@ -11,7 +11,7 @@ import Nav from './component/Nav';
 function App() {
   return (
     <>
-      {/* <div className='main'>
+      <div className='main'>
         <Vector />
         <Header />
         <div className='content'>
@@ -20,14 +20,14 @@ function App() {
           <Content />
         </div>
         <Map/>
-      </div> */}
+      </div>
 
       {/* ด้านล่างของกู */}
-      
-      <div className='main'>
+
+      {/* <div className='main'>
         <Nav />
         <Travel />
-      </div>
+      </div> */}
     </>
   );
 }
