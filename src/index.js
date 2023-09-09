@@ -7,7 +7,7 @@ import App from './App';
 import Tour from './component/Tour';
 import Review from './component/Review';
 import About from './component/About';
-
+import Travel from './component/Travel';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: (<About />),
+  },
+  {
+    path: "travel",
+    element: (<Travel />),
   },
 ]);
 
