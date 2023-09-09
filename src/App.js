@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './component/Header';
-import Hero from './component/Hero';
+import Hero from './component/hero/Hero';
 import Content from './component/Content';
 import Destination from './component/Destination';
 import Map from './component/Map';
 import Vector from './component/Vector';
 import Travel from './component/Travel';
 import Nav from './component/Nav';
+import Footer from './component/Footer';
+import HeroDestiantion from './component/hero/HeroDestiantion';
 
 function App() {
   return (
@@ -16,18 +18,12 @@ function App() {
         <Header />
         <div className='content'>
           <Hero />
-          <Destination />
+          <HeroDestiantion />
           <Content />
         </div>
         {/* <Map/> */}
+        <Footer/>
       </div>
-
-      {/* ด้านล่างของกู */}
-
-      {/* <div className='main'>
-        <Nav />
-        <Travel />
-      </div> */}
     </>
   );
 }

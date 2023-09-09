@@ -1,8 +1,13 @@
-import "./css/hero.css"
-import place1 from "./img/place1.jpg"
-import place2 from "./img/place2.jpg"
-import hero from "./img/people.png"
+import "../css/hero.css"
+import place1 from "../img/place1.jpg"
+import place2 from "../img/place2.jpg"
+import hero from "../img/people.png"
+import { useEffect } from "react"
 const Hero = ()=>{
+
+    useEffect(()=>{
+        document.querySelector('.hero-img').style.opacity='1'
+    }, [])
     return(
         <section className="hero">
             <div className="slogan">

@@ -18,10 +18,10 @@ const Header = (props)=>{
             </span>
             <nav>
                 <ul className={`nav_link ${toggleClassCheck}`} id="nav-menu">
-                    <li><Link to="/tour">Tourist Attraction</Link></li>
-                    <li><Link to="/reviews">Reviews</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link className="cta" to="/about"><button>Contact Us</button></Link></li>
+                    <li><Link to="/tour">สถานที่ท่องเที่ยว</Link></li>
+                    <li><Link to="/reviews">รีวิว</Link></li>
+                    <li><Link to="/about">เกี่ยวกับเรา</Link></li>
+                    <li><Link className="cta" to="/about"><button>ติดต่อ</button></Link></li>
                 </ul>
             </nav>
         </header>

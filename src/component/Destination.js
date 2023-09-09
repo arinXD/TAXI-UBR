@@ -27,7 +27,7 @@ let data = [
 const Destination = ()=>{
     return(
         <section class="destination">
-            <h1>สถานที่ท่องเที่ยวยอดนิยม</h1>
+            <h1>สถานที่ท่องเที่ยว</h1>
             <p>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</p>
             <ul class="destination-list">
             {

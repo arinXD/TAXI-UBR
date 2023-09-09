@@ -10,7 +10,8 @@
     grid-template-columns: 1fr;
 }
 .slogan{
-    padding: 2em 0;
+    padding: 0 0 2em;
+    text-align: center;
 }
 .slogan h1{
     width: 100%;
@@ -18,6 +19,7 @@
     color: #333333;
     font-family: 'Poppins', sans-serif !important;
     margin-bottom: 1em;
+    
 }
 .hero-img {
     /* border: 1px solid black; */
@@ -27,6 +29,8 @@
     background-size: cover;
     display: block;
     position: relative;
+    opacity: 0.1;
+    transition: opacity 1s;
 }
 .hero-img .people{
     width: 100%;
@@ -100,6 +104,12 @@
 .banner .location{
     width: 60px;
     font-size: 5px;
+}
+.hero-img .banner:hover,
+.hero-img .train:hover,
+.hero-img .plane:hover {
+    transform: scale(1.15);
+    user-select: none;
 }
   
 

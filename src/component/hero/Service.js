@@ -1,5 +1,5 @@
-import taxis from "./img/marker3.png"
-import "./css/service.css"
+import taxis from "../img/marker3.png"
+import "../css/service.css"
 const Service = ()=>{
     return(
         <div className="service">
@@ -16,15 +16,12 @@ const Service = ()=>{
                     <li><i class="bi bi-car-front-fill"></i> <span>รับส่งต่างจังหวัด</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>รับส่งต่างอำเภอ</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>รับส่งทุกทิศทั่วไทย</span></li>
-                </ul>
-                {/* <p>เหมา</p>
-                <ul className="detail-list">
                     <li><i class="bi bi-car-front-fill"></i> <span>เหมาแท็กซี่ขอนแก่น</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>เหมาแท็กซี่ไปต่างจังหวัด</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>เหมาแท็กซี่ไปต่างอำเภอ</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>เหมารถ เหมารถตู้ เช่ารถตู้ พร้อมคนขับ</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>แท็กซี่ขนาดใหญ่ 7 ที่นั่ง</span></li>
-                </ul> */}
+                </ul>
             </div>
         </div>
     )

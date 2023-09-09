@@ -10,12 +10,14 @@
 }
 .destination p{
     color: #333333;
+    text-align: center;
 }
 ul.destination-list{
     display: grid;
     list-style-type: none;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 2em;
+    align-items: center;
 }
 li.destination-item{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

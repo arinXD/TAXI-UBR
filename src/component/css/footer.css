@@ -1,0 +1,35 @@
+footer {
+    padding: 60px 30px 30px;
+    color: rgb(0, 0, 0);
+    background-color: #040D12;
+}
+footer h1{
+    font-size: 1.2em;
+    /* font-weight: normal; */
+    color: #77D4FC;
+    margin-bottom: 1em;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer ul li {
+    padding: 1em 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #afafaf;
+}
+footer .copyright{
+    margin-top: 1em;
+    color: #afafaf;
+    text-align: center;
+}
+footer .fa-brands{
+    border: 1px solid white;
+    padding: 5px 8px;
+    border-radius: 50%;
+    margin-right: .5em;
+}
