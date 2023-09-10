@@ -1,15 +1,19 @@
 import taxis from "../img/marker3.png"
 import "../css/service.css"
 import CarGallery from "./CarGallery"
+import { Link } from "react-router-dom"
 const Service = ()=>{
     return(
         <div className="service">
             <div className="hero-wrap">
                 <h1>TAXI UBR Thailand แท็กซี่ขอนแก่น</h1>
-                <p className="describe">พูดคุยตกลงราคาได้ค่ะ ขอบคุณที่ใช้บริการ <i class="bi bi-emoji-smile-fill"></i> </p>
+                {/* <hr/> */}
             </div>
             <CarGallery/>
             <div className="hero-wrap">
+                <Link to="/reviews" className="link-reviews">รีวิวเพิ่มเติม <i class="bi bi-arrow-right-circle"></i></Link>
+            </div>
+            {/* <div className="hero-wrap">
                 <p style={{marginBottom:"15px"}}>บริการแท็กซี่</p>
                 <ul className="detail-list">
                     <li><i class="bi bi-car-front-fill"></i> <span>ตัวเมืองขอนแก่น</span></li>
@@ -25,7 +29,7 @@ const Service = ()=>{
                     <li><i class="bi bi-car-front-fill"></i> <span>เหมารถ เหมารถตู้ เช่ารถตู้ พร้อมคนขับ</span></li>
                     <li><i class="bi bi-car-front-fill"></i> <span>แท็กซี่ขนาดใหญ่ 7 ที่นั่ง</span></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

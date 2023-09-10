@@ -5,29 +5,30 @@
 /* icon */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 40px 0;
+    margin: 40px 0;
 }
-.slogan{
+
+.slogan {
     padding: 0 10px 40px;
     text-align: center;
 }
-.slogan h1{
+
+.slogan h1 {
     width: 100%;
-    font-size: 1.3em;
     color: #333333;
-    font-family: 'Poppins', sans-serif !important;
     margin-bottom: 1em;
-    
+
 }
-.slogan p{
+
+.slogan p {
     margin: 0;
     padding: 0;
 }
+
 .hero-img {
-    /* border: 1px solid black; */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,14 +36,16 @@
     display: block;
     position: relative;
     opacity: 0.1;
-    /* transition: opacity 5s; */
-    /* transition: all 0.3s ease 0s; */
 }
-.hero-img .people{
-    width: 100%;
+
+.hero-img .people {
+    max-width: 100%;
+    display: block;
     height: auto;
+    margin: 0 auto;
 }
-.train{
+
+.train {
     display: flex;
     background-color: white;
     padding: 5px;
@@ -56,9 +59,10 @@
     color: #42a7c3;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 16%;
 }
-.plane{
+
+.plane {
     display: flex;
     background-color: white;
     padding: 5px 10px;
@@ -73,19 +77,23 @@
     top: 20%;
     right: 5%;
 }
-.plane span{
+
+.plane span {
     font-family: 'Reem Kufi', sans-serif;
     margin-left: 5px;
 }
-.banner:nth-of-type(1){
+
+.banner:nth-of-type(1) {
     top: 60%;
     left: 6%;
 }
-.banner:nth-of-type(2){
+
+.banner:nth-of-type(2) {
     top: 42%;
     right: 5%;
 }
-.banner{
+
+.banner {
     background-color: white;
     width: fit-content;
     padding: 10px;
@@ -95,211 +103,66 @@
     transition: all 0.3s ease 0s;
     position: absolute;
 }
-.banner img{
+
+.banner img {
     display: block;
     width: 60px;
     border-radius: 8px;
     margin-bottom: .5em;
 }
-.banner .title{
+
+.banner .title {
     width: 60px;
     font-weight: bold;
     font-size: 5px;
     margin-bottom: 1em;
 }
-.banner .location{
+
+.banner .location {
     width: 60px;
     font-size: 5px;
     margin: 0;
 }
+
 .hero-img .banner:hover,
 .hero-img .train:hover,
 .hero-img .plane:hover {
     transform: scale(1.15);
     user-select: none;
 }
-  
 
-/* section.hero {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-}
-.slogan h1 {
-    font-size: 3.2em;
-    color: #333333;
-    font-family: 'Poppins', sans-serif !important;
-    margin-bottom: .3em;
-}
-@media only screen and (min-width: 360px) and (max-width: 766px) {
-    .hero.icon2 span {
-        font-size: .5em;
-        padding: 5px 10px;
+@media screen and (min-width: 768px){
+    .train {
+        transform: scale(2);
+        top: 10%;
+        left: 28%;
     }
-    section.hero {
-        grid-template-columns: 1fr;
-        padding: 4em 0;
+    
+    .plane {
+        transform: scale(2);
+        top: 20%;
+        right: 18%;
     }
-    .slogan{
-        margin-bottom: 4em;
-        text-align: center;
+    .hero-img .banner{
+        transform: scale(2);
     }
-    .slogan h1{
-       font-size: 2.5em;
+    .banner:nth-of-type(1) {
+        top: 65%;
+        left: 20%;
     }
-    .hero-img {
-        width: 100% !important;
-        height: 24em !important;
+    
+    .banner:nth-of-type(2) {
+        top: 45%;
+        right: 20%;
     }
-    .place.banner1{
-        top: 60%;
-        left: 0 !important;
-    }
-    .place img{
-        width: 80px !important;
-        height: 80px !important;
-    }
-    .hero-img .place .title {
-        font-size: .25em !important;
-    }
-    .place .location,
-    .hero-img .place .location span{
-        font-size: .25em !important;
-        word-wrap: break-word;
-        white-space: nowrap;
-    }
-    .hero-img .place .location span{
-        margin-left: 2px !important;
+    
+    .hero-img .banner:hover,
+    .hero-img .train:hover,
+    .hero-img .plane:hover {
+        transform: scale(2.5);
+        user-select: none;
     }
 }
-@media only screen and (max-width: 767px) {
-    section.hero {
-        grid-template-columns: 1fr;
-        padding: 4em 0;
-    }
-    .slogan{
-        margin-bottom: 4em;
-        text-align: center;
-    }
-    .slogan h1{
-       font-size: 2.5em;
-    }
+@media screen and (min-width: 1023px){
+
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    section.hero {
-        grid-template-columns: 1fr;
-        padding: 4em 0;
-    }
-    .slogan{
-        margin-bottom: 4em;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 1366px) {
-    .hero-img {
-        width: 20em !important;
-        height: 20em !important;
-    }
-    .slogan h1 {
-        font-size: 2em;
-    }
-} */
-
-
-
-
-/* .hero-img .place {
-    background-color: white;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 16px;
-    height: fit-content;
-    box-shadow: rgba(120, 126, 133, 0.2) 0px 8px 24px;
-    transition: all 0.3s ease 0s;
-    position: absolute;
-}
-
-.hero-img .place:hover,
-.hero.icon1:hover,
-.hero.icon2:hover {
-    transform: scale(1.15);
-    user-select: none;
-}
-
-.hero-img .place .title {
-    color: #333333;
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
-    font-size: .8em;
-}
-
-.hero-img .place .location span {
-    color: #8F8F8F;
-    margin-left: 8px;
-    font-size: 12px;
-}
-
-.hero-img .place img {
-    width: 180px;
-    height: 100px;
-    object-fit: cover;
-    object-position: 50% 85%;
-    border-radius: 8px;
-}
-
-.place.banner1 {
-    top: 60%;
-    left: -5%;
-}
-
-.place.banner2 {
-    top: 40%;
-    left: 65%;
-}
-
-.hero.icon1 {
-    position: absolute;
-    top: 9%;
-    left: 20%;
-}
-
-.hero.icon2 {
-    position: absolute;
-    top: 17%;
-    left: 66%;
-}
-
-.hero.icon1 {
-    display: flex;
-    background-color: white;
-    padding: 5px;
-    box-shadow: rgba(120, 126, 133, 0.2) 0px 8px 24px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease 0s;
-}
-
-.hero.icon2 {
-    display: flex;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: rgba(120, 126, 133, 0.2) 0px 8px 24px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 25px;
-    transition: all 0.3s ease 0s;
-}
-
-.hero.icon1 i,
-.hero.icon2 i {
-    color: #42a7c3;
-}
-
-.hero.icon2 span {
-    margin-left: 1em;
-}
- */
