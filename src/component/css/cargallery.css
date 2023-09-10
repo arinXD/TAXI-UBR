@@ -19,7 +19,7 @@
 .car-gallery .car-gallery-item img {
     display: block;
     object-fit: cover;
-    height: 170px;
+    height: 30vh;
     background-position: 50% 50%;
     transition: transform 0.2s ease;
     cursor: pointer;

@@ -1,17 +1,14 @@
 import './App.css';
 import Header from './component/Header';
 import Hero from './component/hero/Hero';
-import Content from './component/Content';
-import Destination from './component/Destination';
 import Map from './component/Map';
 import Vector from './component/Vector';
-import Travel from './component/Travel';
-import Nav from './component/Nav';
 import Footer from './component/Footer';
 import HeroDestiantion from './component/hero/HeroDestiantion';
-
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import ServiceList from './component/ServiceList';
+import Service from './component/hero/Service';
 
 function App() {
   return (
@@ -20,9 +17,12 @@ function App() {
         <Vector />
         <Header />
         <div className='content'>
-          <Hero />
-          <HeroDestiantion />
-          <Content />
+          <Hero/>
+          <div className='content-wrap'>
+            <HeroDestiantion />
+            <Service/>
+            <ServiceList/>
+          </div>
         </div>
         <Footer/>
       </div>
