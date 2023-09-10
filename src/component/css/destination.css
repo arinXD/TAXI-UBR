@@ -15,10 +15,18 @@
     text-align: center;
 }
 
+.destination h5 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 75px !important;
+    font-size: 0.9em;
+}
 .destination p {
     color: #333333;
     text-align: center;
-    margin-bottom: 80px;
+    /* margin-bottom: 75px !important; */
+    /* font-size: 0.9em; */
+    padding: 10px 0 10px 0;
 }
 
 ul.destination-list {
@@ -94,6 +102,7 @@ li.destination-item img {
     li.destination-item img {
         height: 14em;
     }
+
 }
 @media screen and (min-width:693px) {
     ul.destination-list {

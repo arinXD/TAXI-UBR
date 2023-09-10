@@ -67,7 +67,7 @@ const Destination = () => {
         <>
             <section class="destination">
                 <h1>สถานที่ท่องเที่ยว</h1>
-                <p>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</p>
+                <h5>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</h5>
                 <ul class="destination-list">
                     {data.slice(0, showMore ? data.length : 8).map((e, index) => {
                         return <DestinationItem key={index} {...e} />;
