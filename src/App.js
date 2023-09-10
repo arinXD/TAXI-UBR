@@ -10,6 +10,9 @@ import Nav from './component/Nav';
 import Footer from './component/Footer';
 import HeroDestiantion from './component/hero/HeroDestiantion';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
 function App() {
   return (
     <>
@@ -21,11 +24,11 @@ function App() {
           <HeroDestiantion />
           <Content />
         </div>
-        {/* <Map/> */}
         <Footer/>
       </div>
     </>
   );
 }
+{/* <Map/> */}
 
 export default App;

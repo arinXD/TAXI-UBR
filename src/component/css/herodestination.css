@@ -1,32 +1,28 @@
 .hero-destination{
-    margin: 50px 0;
-    padding: 20px;
-    /* border: 1px solid black; */
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 7px;
+    margin: 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: white;
-    border-radius: 8px;
 }
 .hero-destination h1{
     font-size: 1.3em;
     color: #333333;
     font-family: 'Poppins', sans-serif !important;
     margin-bottom: 0.5em;
-    /* text-align: center; */
+    font-weight: bold;
 }
 .hero-destination p{
     color: #333333;
-    /* text-align: center; */
+    margin: 0;
 }
 .hero-destination .destinate img{
     display: block;
     width: 100%;
-    margin: 1em 0;
-    border-radius: 8px;
 }
-.destinate a{
+.hero-wrap a{
     display: block;
     padding: 1em .5em;
-    border-radius: 8px;
+    border-radius: 3px;
     text-decoration: none;
     text-align: center;
     margin-left: auto;
@@ -35,6 +31,6 @@
     box-shadow: none;
     color: white;
 }
-.destinate a:hover{
+.hero-wrap a:hover{
     background-color: #61aecf;
 }

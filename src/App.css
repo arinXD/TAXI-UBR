@@ -21,5 +21,12 @@
   opacity: 100%;
 }
 .content{
-  padding: 2em 50px;
+  padding: 0;
+}
+.hero-wrap{
+  padding: 15px 18px;
+}
+ul{
+  margin: 0 !important;
+  padding: 0 !important;
 }

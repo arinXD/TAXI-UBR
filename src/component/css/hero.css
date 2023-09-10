@@ -8,9 +8,10 @@
 .hero{
     display: grid;
     grid-template-columns: 1fr;
+    padding: 40px 0;
 }
 .slogan{
-    padding: 0 0 2em;
+    padding: 0 10px 40px;
     text-align: center;
 }
 .slogan h1{
@@ -21,6 +22,10 @@
     margin-bottom: 1em;
     
 }
+.slogan p{
+    margin: 0;
+    padding: 0;
+}
 .hero-img {
     /* border: 1px solid black; */
     width: 100%;
@@ -30,7 +35,8 @@
     display: block;
     position: relative;
     opacity: 0.1;
-    transition: opacity 1s;
+    /* transition: opacity 5s; */
+    /* transition: all 0.3s ease 0s; */
 }
 .hero-img .people{
     width: 100%;
@@ -65,7 +71,7 @@
     font-size: .85em;
     position: absolute;
     top: 20%;
-    right: -3%;
+    right: 5%;
 }
 .plane span{
     font-family: 'Reem Kufi', sans-serif;
