@@ -1,10 +1,21 @@
 import DestinationItem from "./DestinationItem"
 import "./css/destination.css"
+import { useState } from "react"; // Import useState hook
 let data = [
     {
-        imgPath:"./img/destination/hai_na_garden_house.jpg",
+        imgPath:"./img/Blue_Lagoon1.jpg",
         location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
-        title:"Hai-Na Garden House"
+        title:"Blue Lagoon",
+    },
+    {
+        imgPath:"./img/takayai.jpg",
+        location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
+        title:"Takayai Cafe"
+    },
+    {
+        imgPath:"./img/Phamanfun2.jpg",
+        location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
+        title:"ผาม่านฝัน"
     },
     {
         imgPath:"./img/destination/hai_na_garden_house.jpg",
@@ -12,32 +23,66 @@ let data = [
         title:"Hai-Na Garden House"
     },
     {
-        imgPath:"./img/destination/hai_na_garden_house.jpg",
-        location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
-        title:"Hai-Na Garden House"
+        imgPath:"./img/Chang_Arena_Buriram4.jpg",
+        location:"ตำบลอิสาณ อำเภอเมืองบุรีรัมย์ บุรีรัมย์",
+        title:"ช้างอารีนา"
     },
     {
-        imgPath:"./img/destination/hai_na_garden_house.jpg",
-        location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
-        title:"Hai-Na Garden House"
+        imgPath:"./img/Wat_Pha_Son_Kaew2.jpg",
+        location:"ตำบลแคมป์สน อำเภอเขาค้อ เพชรบูรณ์",
+        title:"วัดผาซ่อนแก้ว"
+    },
+    {
+        imgPath:"./img/Ubonrat_Dam1.jpg",
+        location:"อำเภออุบลรัตน์ ขอนแก่น",
+        title:"เขื่อนอุบลรัตน์"
+    },
+    {
+        imgPath:"./img/Khao_Kho2.jpg",
+        location:"อำเภอเขาค้อ ตำบลแคมป์สน เพชรบูรณ์",
+        title:"เขาค้อ"
+    },
+    {
+        imgPath:"./img/Phu_Thap_Buek5.jpg",
+        location:"ตำบลวังบาล เพชรบูรณ์",
+        title:"ภูทับเบิก"
+    },
+    {
+        imgPath:"./img/Khon_Kaen_Airport1.jpg",
+        location:"ตำบลบ้านเป็ด อำเภอเมืองขอนแก่น ขอนแก่น",
+        title:"สนามบินขอนแก่น"
     },
 
 ]
 
-const Destination = ()=>{
-    return(
-        <section class="destination">
-            <h1>สถานที่ท่องเที่ยว</h1>
-            <p>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</p>
-            <ul class="destination-list">
-            {
-                data.map((e) => {
-                    return <DestinationItem {...e}/>
-                })
-            }
-            </ul>
-        </section>
-    )
+const Destination = () => {
+    const [showMore, setShowMore] = useState(false); // State to track whether to show more items
+
+    // Function to toggle the "Select more" button
+    const toggleShowMore = () => {
+        setShowMore(!showMore);
+    }
+
+    return (
+        <>
+            <section class="destination">
+                <h1>สถานที่ท่องเที่ยว</h1>
+                <p>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</p>
+                <ul class="destination-list">
+                    {data.slice(0, showMore ? data.length : 8).map((e, index) => {
+                        return <DestinationItem key={index} {...e} />;
+                    })}
+                </ul>
+                {data.length > 8 && (
+                    <button onClick={toggleShowMore}>
+                        {showMore ? <i class="bi bi-arrow-up-circle pe-2"></i> : <i class="bi bi-arrow-down-circle pe-2"></i>}{" "}
+                        {showMore ? "Show less" : "Select more"}
+                    </button>
+                )}
+            </section>
+        </>
+    );
 }
+
 
 export default Destination

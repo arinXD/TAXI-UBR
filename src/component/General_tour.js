@@ -8,7 +8,7 @@ import Footer from './Footer';
 const General_tour = () => {
     const [number, setNumber] = useState(0)
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log(number);
     })
     return (
@@ -31,15 +31,6 @@ const General_tour = () => {
                 smartSpeed={true}
             >
                 {[
-                    <Link class='test' to="/travel"><div class="w-96 mr-5 space-y-5">
-                        <div class='relative w-12 h-12'>
-                            <div class='img-scroll'></div>
-                        </div>
-                        <div>
-                            <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
-                            <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
-                        </div>
-                    </div></Link>,
                     <div class="w-96 mr-5 space-y-5">
                         <div class='relative w-12 h-12'>
                             <div class='img-scroll'></div>
@@ -48,9 +39,10 @@ const General_tour = () => {
                             <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
                             <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
                         </div>
-                    </div>, <div class="w-96 mr-5 space-y-5">
+                    </div>,
+                    <div class="w-96 mr-5 space-y-5">
                         <div class='relative w-12 h-12'>
-                            <div class='img-scroll'></div>
+                            <div class='img-scroll2'></div>
                         </div>
                         <div>
                             <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
@@ -58,7 +50,7 @@ const General_tour = () => {
                         </div>
                     </div>, <div class="w-96 mr-5 space-y-5">
                         <div class='relative w-12 h-12'>
-                            <div class='img-scroll'></div>
+                            <div class='img-scroll3'></div>
                         </div>
                         <div>
                             <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
@@ -66,7 +58,7 @@ const General_tour = () => {
                         </div>
                     </div>, <div class="w-96 mr-5 space-y-5">
                         <div class='relative w-12 h-12'>
-                            <div class='img-scroll'></div>
+                            <div class='img-scroll4'></div>
                         </div>
                         <div>
                             <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
@@ -74,84 +66,48 @@ const General_tour = () => {
                         </div>
                     </div>, <div class="w-96 mr-5 space-y-5">
                         <div class='relative w-12 h-12'>
-                            <div class='img-scroll'></div>
+                            <div class='img-scroll5'></div>
                         </div>
                         <div>
                             <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
                             <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
                         </div>
-                    </div>,].map((item) => (
+                    </div>, <div class="w-96 mr-5 space-y-5">
+                        <div class='relative w-12 h-12'>
+                            <div class='img-scroll6'></div>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
+                            <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
+                        </div>
+                    </div>,
+                    <div class="w-96 mr-5 space-y-5">
+                        <div class='relative w-12 h-12'>
+                            <div class='img-scroll7'></div>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
+                            <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
+                        </div>
+                    </div>,
+                    <div class="w-96 mr-5 space-y-5">
+                        <div class='relative w-12 h-12'>
+                            <div class='img-scroll8'></div>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-semibold leading-6 text-slate-900 bg-transparent">Typescript support</h2>
+                            <p class="mt-2 text-sm leading-6 text-slate-700 bg-transparent">Scroll carousel is fully typed. Make sure you have a environment with typescript setup. Now just import and initialize. BOOM!!ssssssssssssssssssssssssssssssssssssssssssss</p>
+                        </div>
+                    </div>].map((item) => (
                         <div key={item} className='ml-5 p-5'>
                             {item}
                         </div>
                     ))}
             </ScrollCarousel>
             <div className="wrap">
-                <Destination/>
+                <Destination />
             </div>
-            {/* <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1> */}
-            <Footer/>
+
         </>
     );
 };

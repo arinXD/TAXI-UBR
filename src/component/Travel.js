@@ -1,10 +1,11 @@
 import "./css/travel.css"
 import Nav from './Nav';
-
+import Header from "./Header";
+import Footer from "./Footer";
 const Travel = () => {
     return (
         <>
-            <Nav />
+            <Header />
             <div class='maintravel'>
                 <div className='contain'>
                     <div class='imgBox'></div>
@@ -112,12 +113,13 @@ const Travel = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <hr class='mb-5'></hr> */}
-                    tes
+                    <hr class='mt-5 text-white'></hr>
+                    
 
                 </div>
 
             </div>
+            <Footer/>
         </>
     )
 }
