@@ -10,7 +10,7 @@ export default ()=>{
             <li><Link to="/reviews">รีวิว</Link></li>
             <li><Link to="/about">เกี่ยวกับเรา</Link></li>
             <li><Link to="/about">ติดต่อ</Link></li>
-            <li><Link to="/about"><i class="fa-brands fa-facebook-f"></i> facebook</Link></li>
+            <li><Link to="/about"><i class="bi bi-facebook"></i> facebook</Link></li>
         </ul>
         <hr/>
         <p className="copyright">

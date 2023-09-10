@@ -2,3 +2,32 @@
     display: block;
     width: 100%;
 }
+.service div h1{
+    width: 100%;
+    font-size: 1.3em;
+    color: #333333;
+    font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+.service div p.describe{
+    text-align: center;
+}
+.service div .detail-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.service div .detail-list li{
+    margin-bottom: .5em;
+    display: flex;
+}
+.service div .detail-list li i{
+    margin-right: 1em;
+    display: inline-block;
+    color: #42a7c3;
+}
+.service div .detail-list li span{
+    display: inline-block;
+}

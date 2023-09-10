@@ -14,7 +14,7 @@ const Header = (props)=>{
         <header>
             <div className="logo"><h1><Link to="/">TAXI UBR Thailand</Link></h1></div>
             <span className="nav-toggle" id="nav-toggle" onClick={handleClick}>
-                <i className="fas fa-bars"/>
+                <i class="bi bi-list"></i>
             </span>
             <nav>
                 <ul className={`nav_link ${toggleClassCheck}`} id="nav-menu">

@@ -1,6 +1,7 @@
 import "./css/travel.css"
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import Nav from './Nav';
 
 const Travel = () => {
     return (

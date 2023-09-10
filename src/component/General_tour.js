@@ -1,9 +1,16 @@
 import "./css/general_tour.css"
 // import ScrollCarousel from 'scroll-carousel';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollCarousel from 'scroll-carousel-react';
 import { Link } from "react-router-dom";
+import Destination from './Destination';
+import Footer from './Footer';
 const General_tour = () => {
+    const [number, setNumber] = useState(0)
+
+    useEffect(()=>{
+        console.log(number);
+    })
     return (
         <>
             <div class="con mb-4">
@@ -79,7 +86,10 @@ const General_tour = () => {
                         </div>
                     ))}
             </ScrollCarousel>
-
+            <div className="wrap">
+                <Destination/>
+            </div>
+            {/* <h1>test</h1>
             <h1>test</h1>
             <h1>test</h1>
             <h1>test</h1>
@@ -140,8 +150,8 @@ const General_tour = () => {
             <h1>test</h1>
             <h1>test</h1>
             <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
+            <h1>test</h1> */}
+            <Footer/>
         </>
     );
 };

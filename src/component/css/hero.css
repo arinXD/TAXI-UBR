@@ -104,6 +104,7 @@
 .banner .location{
     width: 60px;
     font-size: 5px;
+    margin: 0;
 }
 .hero-img .banner:hover,
 .hero-img .train:hover,

@@ -27,9 +27,11 @@ footer .copyright{
     color: #afafaf;
     text-align: center;
 }
-footer .fa-brands{
-    border: 1px solid white;
-    padding: 5px 8px;
-    border-radius: 50%;
-    margin-right: .5em;
+footer .bi-facebook{
+    margin-right: .85em;
+}
+footer .bi-facebook::before{
+    scale: 1.5;
+
+
 }

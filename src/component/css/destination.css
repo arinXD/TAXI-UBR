@@ -1,6 +1,9 @@
 .destination{
     padding: 5em 0;
 }
+.wrap{
+    padding: 0 50px;
+}
 .destination h1{
     font-size: 1.3em;
     color: #333333;
@@ -18,6 +21,8 @@ ul.destination-list{
     grid-template-columns: repeat(1, 1fr);
     margin-top: 2em;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 li.destination-item{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

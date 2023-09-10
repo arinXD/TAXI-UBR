@@ -1,15 +1,11 @@
-/* logo font */
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
-/* content font */
+/* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 header{
     font-family: 'Lato', sans-serif;
     display: flex;
     height: auto;
-    /* background-color: white; */
     justify-content: center;
-    /* align-items: center; */
     padding: 0 30px;
     position: relative;
     flex-direction: column;
@@ -141,4 +137,4 @@ nav ul li:hover a{
         display: none;
     }
 
-}
+} */
