@@ -54,7 +54,7 @@ p {
     .content .content-wrap .service,
     .content .content-wrap .service-list
     {
-        width: 50%;
+        width: 100%;
     }
     .content {
         padding: 0 60px;
