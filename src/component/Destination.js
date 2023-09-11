@@ -1,12 +1,7 @@
 import DestinationItem from "./DestinationItem"
 import "./css/destination.css"
-import { useEffect, useState } from "react"; // Import useState hook
+import { useState } from "react"; // Import useState hook
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Link,
-  useLocation
-} from "react-router-dom";
 
 let data = [
     {

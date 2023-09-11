@@ -8,7 +8,6 @@ import Tour from './component/Tour';
 import Review from './component/Review';
 import About from './component/About';
 import Travel from './component/Travel';
-import BlueLagoon from './component/full/Blue_lagoon';
 
 const router = createBrowserRouter([
   {

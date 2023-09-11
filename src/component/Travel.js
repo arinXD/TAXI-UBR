@@ -36,6 +36,7 @@ const Travel = () => {
                             <p class='lh-lg mb-5'>📍 {travel.location}</p>
                             <div className="embed-map">
                                 <iframe src={travel.mapSrc}
+                                    title="Google Maps"
                                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
