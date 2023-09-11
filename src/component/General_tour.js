@@ -19,7 +19,7 @@ const General_tour = () => {
                     <div class=''>
                         <div class='text-start text-cen'>
                             <h1 class='fw-bold font-si display-4'>Explore Khonkaen like a local</h1>
-                            <p class='d-nn font-sl'>From iconic attractions to amazing experiences, your journey begins here.</p>
+                            <p class='d-nn font-sl mt-2'>From iconic attractions to amazing experiences, your journey begins here.</p>
                         </div>
                     </div>
                 </div>
