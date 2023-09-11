@@ -8,9 +8,11 @@
     height: 85vh;
 
 }
-
-.imgBox {
+.takayai{
     background-image: url('../img/takayai.jpg');
+}
+.imgBox {
+    /* background-image: url('../img/takayai.jpg'); */
     background-size: cover;
     background-position: center 60%;
     width: 100%;

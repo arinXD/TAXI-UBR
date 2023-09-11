@@ -1,18 +1,28 @@
 import DestinationItem from "./DestinationItem"
 import "./css/destination.css"
-import { useState } from "react"; // Import useState hook
+import { useEffect, useState } from "react"; // Import useState hook
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Link,
+  useLocation
+} from "react-router-dom";
+
 let data = [
     {
+        link:"/bluelagoon",
         imgPath:"./img/Blue_Lagoon1.jpg",
         location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
         title:"Blue Lagoon",
     },
     {
+        link:"takayai",
         imgPath:"./img/takayai.jpg",
         location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
         title:"Takayai Cafe"
     },
     {
+        link:"phamanfun",
         imgPath:"./img/Phamanfun2.jpg",
         location:"ตำบลภูผาม่าน อำเภอภูผาม่าน ขอนแก่น",
         title:"ผาม่านฝัน"
@@ -58,7 +68,6 @@ let data = [
 const Destination = () => {
     const [showMore, setShowMore] = useState(false); // State to track whether to show more items
 
-    // Function to toggle the "Select more" button
     const toggleShowMore = () => {
         setShowMore(!showMore);
     }

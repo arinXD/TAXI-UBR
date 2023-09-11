@@ -28,12 +28,16 @@ const router = createBrowserRouter([
     element: (<About />),
   },
   {
-    path: "travel",
+    path: "bluelagoon",
+    element: (<BlueLagoon />),
+  },
+  {
+    path: "takayai",
     element: (<Travel />),
   },
   {
-    path: "bluelagoon",
-    element: (<BlueLagoon />),
+    path: "phamanfun",
+    element: (<Travel />),
   },
 ]);
 

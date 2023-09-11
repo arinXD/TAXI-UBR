@@ -1,9 +1,9 @@
 const DestinationItem = (props)=>{
-    let {imgPath,location, title} = props
+    let {link, imgPath,location, title} = props
     const getImg = require(`${imgPath}`)
     return(
         <li class="destination-item">
-            <a href="#">
+            <a href={link}>
                 <img src={getImg}/>
                 <p className="location">
                     <i class="bi bi-geo-alt-fill" style={{color:"#42a7c3"}}></i>
