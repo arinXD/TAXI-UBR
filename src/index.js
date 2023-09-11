@@ -29,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: "bluelagoon",
-    element: (<BlueLagoon />),
+    element: (<Travel />),
   },
   {
     path: "takayai",
@@ -37,6 +37,34 @@ const router = createBrowserRouter([
   },
   {
     path: "phamanfun",
+    element: (<Travel />),
+  },
+  {
+    path: "haina",
+    element: (<Travel />),
+  },
+  {
+    path: "changarena",
+    element: (<Travel />),
+  },
+  {
+    path: "watphasonkaew",
+    element: (<Travel />),
+  },
+  {
+    path: "ubonrat",
+    element: (<Travel />),
+  },
+  {
+    path: "khaokho",
+    element: (<Travel />),
+  },
+  {
+    path: "phuthapbuek",
+    element: (<Travel />),
+  },
+  {
+    path: "airport",
     element: (<Travel />),
   },
 ]);

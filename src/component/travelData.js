@@ -5,7 +5,35 @@ const travelData = [
     }
     ,{
         url: "phamanfun",
-        title:"Pha Man Fun",
+        title:"ผาม่านฝัน",
+    }
+    ,{
+        url: "haina",
+        title:"Hai-Na Garden House",
+    }
+    ,{
+        url: "changarena",
+        title:"ช้างอารีนา",
+    }
+    ,{
+        url: "watphasonkaew",
+        title:"วัดผาซ่อนแก้ว",
+    }
+    ,{
+        url: "ubonrat",
+        title:"เขื่อนอุบลรัตน์",
+    }
+    ,{
+        url: "khaokho",
+        title:"เขาค้อ",
+    }
+    ,{
+        url: "phuthapbuek",
+        title:"ภูทับเบิก",
+    }
+    ,{
+        url: "airport",
+        title:"สนามบินขอนแก่น",
     }
     ,{
         url: "takayai",
