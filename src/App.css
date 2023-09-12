@@ -63,6 +63,28 @@ p {
 
 @media screen and (min-width: 1023px) {
     .content {
-        padding: 0 30px;
+        padding: 0 100px;
+    }
+    .content .content-wrap {
+        margin: 0 auto;
+        /* width: 450px; */
+        display: grid;
+        column-gap: 5em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .content .content-wrap .hero-destination{
+        height: 450px;
+        height: auto;
+    }
+    .hero-destination h1,
+    .service h1,
+    .service-list h1 {
+        font-size: 1.5em;
+    }
+    .service h1 {
+        color: #333333;
+    }
+    .service-list .detail-list {
+        padding: 20px 40px 0 !important;
     }
 }

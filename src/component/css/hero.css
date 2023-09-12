@@ -164,5 +164,44 @@
     }
 }
 @media screen and (min-width: 1023px){
-
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .train {
+        transform: scale(1.2);
+        top: 6%;
+        left: 28%;
+    }
+    
+    .plane {
+        transform: scale(1.2);
+        top: 16%;
+        right: 13%;
+    }
+    .hero-img .banner{
+        transform: scale(1.5);
+    }
+    .banner .title {
+        font-size: .4em;
+    }
+    .banner:nth-of-type(1) {
+        top: 65%;
+        left: 20%;
+    }
+    
+    .banner:nth-of-type(2) {
+        top: 45%;
+        right: 20%;
+    }
+    
+    .hero-img .banner:hover{
+        transform: scale(1.8);
+        user-select: none;
+    }
+    .hero-img .train:hover,
+    .hero-img .plane:hover{
+        transform: scale(1.5);
+        user-select: none;
+    }
 }

@@ -6,7 +6,8 @@ const Service = ()=>{
     return(
         <div className="service">
             <div className="hero-wrap">
-                <h1>TAXI UBR Thailand แท็กซี่ขอนแก่น</h1>
+                <h1>แท็กซี่ขอนแก่น</h1>
+                <p>ดูภาพรีวิวการให้บริการ ไม่ว่าท่านจะไปที่ ท่านจะไปกับใคร ไปไหน ไปกันเพื่อนจ๋า</p>
                 {/* <hr/> */}
             </div>
             <CarGallery/>
