@@ -11,24 +11,36 @@
 .takayai{
     background-image: url('../img/takayai.jpg');
 }
+.bluelagoon{
+    background-image: url('../img/Blue_Lagoon1.jpg' ) !important;
+}
+.phamanfun{
+    background-image: url('../img/Phamanfun2.jpg' ) !important;
+}
+.haina{
+    background-image: url('../img/destination/hai_na_garden_house.jpg' ) !important;
+}
+.changarena{
+    background-image: url('../img/Chang_Arena_Buriram4.jpg' ) !important;
+}
+.watphasonkaew{
+    background-image: url('../img/Wat_Pha_Son_Kaew2.jpg' ) !important;
+}
+.ubonrat{
+    background-image: url('../img/Ubonrat_Dam1.jpg' ) !important;
+}
+.khaokho{
+    background-image: url('../img/Khao_Kho2.jpg' ) !important;
+}
+.phuthapbuek{
+    background-image: url('../img/Phu_Thap_Buek5.jpg' ) !important;
+}
+.airport{
+    background-image: url('../img/Khon_Kaen_Airport1.jpg' ) !important;
+}
+
 .imgBox {
     /* background-image: url('../img/takayai.jpg'); */
-    background-size: cover;
-    background-position: center 60%;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    position: absolute;
-    border: 20px solid white;
-    border-radius: 50px;
-    z-index: -10;
-    /* Set .imgBox to have relative positioning */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.imgBox2 {
-    background-image: url('../img/Blue_Lagoon1.jpg');
     background-size: cover;
     background-position: center 60%;
     width: 100%;
