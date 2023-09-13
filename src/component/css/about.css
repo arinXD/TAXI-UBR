@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+.imgBox2 {
+    background-image: url('../img/takayai.jpg');
+    position: relative;
+    height: 90vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Set .imgBox to have relative positioning */
+
+}
+
+.imgBox3 {
+    background-image: url('../img/takayai.jpg');
+    position: relative;
+    height: 50vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Set .imgBox to have relative positioning */
+
+}
+
+.centeredss {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+.centeredss2 {
+    position: relative;
+    left: 7%;
+
+}
+
+.padddd {
+    padding-right: 100px;
+}
+
+.marconn {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:767px) {
+    .centeredss {
+        position: relative;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        top: 0%;
+        left: 0%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .centeredss2 {
+        position: relative;
+        left: 0%;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+    .centeredss3 {
+        position: relative;
+        left: 0%;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        margin-top: 20px;
+    }
+    .padddd {
+        padding-right: 0;
+    }
+}

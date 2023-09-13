@@ -16,11 +16,9 @@ const General_tour = () => {
             <div class="con mb-4">
                 <div class='w-100 hei'></div>
                 <div class="centered">
-                    <div class=''>
-                        <div class='text-start text-cen'>
-                            <h1 class='fw-bold font-si display-4'>Explore Khonkaen like a local</h1>
-                            <p class='d-nn font-sl mt-2'>From iconic attractions to amazing experiences, your journey begins here.</p>
-                        </div>
+                    <div class='text-start text-cen'>
+                        <h1 class='fw-bold font-si display-4'>Explore Khonkaen like a local</h1>
+                        <p class='d-nn font-sl mt-2'>From iconic attractions to amazing experiences, your journey begins here.</p>
                     </div>
                 </div>
             </div>
