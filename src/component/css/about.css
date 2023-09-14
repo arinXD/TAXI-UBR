@@ -3,26 +3,24 @@
 }
 
 .imgBox2 {
-    background-image: url('../img/takayai.jpg');
+    background-image: url('../img/profile.jpg');
     position: relative;
     height: 90vh;
     width: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Set .imgBox to have relative positioning */
 
 }
 
 .imgBox3 {
-    background-image: url('../img/takayai.jpg');
+    background-image: url('../img/profile.jpg');
     position: relative;
     height: 50vh;
     width: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Set .imgBox to have relative positioning */
 
 }
 

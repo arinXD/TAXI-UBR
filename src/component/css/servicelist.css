@@ -1,21 +1,54 @@
 .service-list {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background-color: white;
     margin: 40px 0;
-    border-radius: 7px;
+}
+.service-list h1{
+    color: #333333;
+    border-left: .3rem solid #42a7c3;
+    padding-left: .4rem;
+}
+.service-wrap{
+    display: flex;
+    flex-direction: column;
 }
 
 .service-list .detail-list{
     list-style-type: none;
-    margin: 0;
-    padding: 0 20px 20px !important;
+    margin: 0 auto 1.5rem !important;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px 20px !important;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+}
+.service-list .detail-list:last-child{
+    margin-bottom: 0 !important;
+}
+.service-list .detail-list h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.service-price{
+    display: inline-block;
+    margin-left: auto;
+    width: 100px;
+    text-align: end;
 }
 .service-list .detail-list li{
-    margin-bottom: .5em;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 1rem;
     display: flex;
+}
+
+.service-list .detail-list li:first-of-type{
+    margin-top: 1rem;
 }
 .service-list .detail-list li:last-child{
     margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
 }
 .service-list .detail-list li i{
     margin-right: 1em;
@@ -43,4 +76,22 @@
 }
 .service-list .hero-wrap .link-reviews:hover{
     background-color: #2d869e;
+}
+@media screen and (min-width: 760px) {
+    .service-wrap{
+        flex-direction: row;
+    }
+    .service-list .detail-list:first-child{
+        margin: 0 2rem 0 0 !important;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .service-wrap{
+        flex-direction: row;
+    }
+    .service-list .detail-list{
+        margin: 0 1rem 0 0 !important;
+        width: 500px;
+        height: 80vh;
+    }
 }

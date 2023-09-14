@@ -1,16 +1,9 @@
 import "./css/general_tour.css"
-// import ScrollCarousel from 'scroll-carousel';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ScrollCarousel from 'scroll-carousel-react';
-import { Link } from "react-router-dom";
 import Destination from './Destination';
-import Footer from './Footer';
 const General_tour = () => {
-    const [number, setNumber] = useState(0)
-
-    useEffect(() => {
-        console.log(number);
-    })
+    // const [carousel]
     return (
         <>
             <div class="con mb-4">

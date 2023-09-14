@@ -1,99 +1,51 @@
 .hero-destination {
     border-radius: 7px;
     margin: 40px 0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background-color: white;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.14)), url(../img/ubk2.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* position: relative; */
-    /* max-width: 400px; */
     width: 100%;
-    height: 500px;
-    /* background-position: 43% 50%; */
-    padding: 20px 20px 10px;
     color: #333333;
-    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
 }
 .hero-destination img{
     display: block;
     width: 100%;
 }
-
 .hero-destination h1{
-    /* margin-bottom: .7em; */
+    border-left: .3rem solid #42a7c3;
+    padding-left: .4rem;
 }
 .hero-destination p {
     margin: 0;
-    word-wrap: break-word;
-    /* font-size: .9em; */
 }
-
 .hero-destination a{
+    padding: 1rem 1.5rem;
+    text-decoration: none;
     width: fit-content;
     display: block;
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 30px;
-    background-color: #42a7c3;
-    margin: 0 auto;
+    margin-top: 1rem;
+    color: #000000;
     transition: all 0.3s ease 0s;
+    border: 1px solid ;
+    width: 100%;
+    text-align: center;
 }
-/* .hero-destination a{
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    display: block;
-    padding: .5em 1em;
-    background-color: white;
-    color: #333;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 16px;
-    bottom: 20px;
-    right: 20px;
-    transition: all 0.3s ease 0s;
-} */
-
 .hero-destination a i{
     display: inline-block;
     margin-left: 0.5em;
 }
 .hero-destination a:hover{
-    background-color: #2d869e;
+    background-color: #000000;
     color: white;
 }
-
-
-/* .hero-destination .destinate img{
-    display: block;
-    width: 100%;
-} */
-/* .hero-destination h1{
-    font-size: 1.3em;
-    color: #333333;
-    font-family: 'Poppins', sans-serif !important;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+@media screen and (min-width: 760px) {
+    /* .hero-destination a{
+        width: fit-content;
+        margin-left: auto;
+    } */
 }
-.hero-destination p{
-    color: #333333;
-    margin: 0;
+@media screen and (min-width: 1023px) {
+    .hero-destination a{
+        width: fit-content;
+        margin-left: auto;
+    }
 }
-
-.hero-wrap a{
-    display: block;
-    padding: 1em .5em;
-    border-radius: 3px;
-    text-decoration: none;
-    text-align: center;
-    margin-left: auto;
-    transition: all 0.3s ease 0s;
-    background-color: #77D4FC;
-    box-shadow: none;
-    color: white;
-}
-.hero-wrap a:hover{
-    background-color: #61aecf;
-} */

@@ -169,39 +169,39 @@
         align-items: center;
     }
     .train {
-        transform: scale(1.2);
-        top: 6%;
-        left: 28%;
+        transform: scale(1.8);
+        top: 9%;
+        left: 29%;
     }
     
     .plane {
-        transform: scale(1.2);
-        top: 16%;
-        right: 13%;
+        transform: scale(1.8);
+        top: 18%;
+        right: 18%;
     }
     .hero-img .banner{
-        transform: scale(1.5);
+        transform: scale(2);
     }
     .banner .title {
         font-size: .4em;
     }
     .banner:nth-of-type(1) {
         top: 65%;
-        left: 20%;
+        left: 16%;
     }
     
     .banner:nth-of-type(2) {
         top: 45%;
-        right: 20%;
+        right: 15%;
     }
     
     .hero-img .banner:hover{
-        transform: scale(1.8);
+        transform: scale(2.5);
         user-select: none;
     }
     .hero-img .train:hover,
     .hero-img .plane:hover{
-        transform: scale(1.5);
+        transform: scale(1.95);
         user-select: none;
     }
 }

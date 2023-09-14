@@ -2,6 +2,7 @@ import "./css/travel.css"
 import { useEffect, useState} from "react"; // Import useState hook
 import Header from "./Header";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 const travelData = require('./travelData')
 
 const Travel = () => {
@@ -13,6 +14,9 @@ const Travel = () => {
         setTravel(foundValue)
         console.log(currentURL);
     }, []);
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
 
     return (
         <>
@@ -22,7 +26,16 @@ const Travel = () => {
                     <div class={'imgBox '+travel.url}></div>
                 </div>
 
+
                 <div class='container margin-top'>
+                    {/* breadcrumb */}
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                            <li className="breadcrumb-item"><Link to="/tour" className="text-decoration-none">สถานที่ท่องเที่ยว</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">{travel.title}</li>
+                        </ol>
+                    </nav>
+                    
                     <div class="row">
                         <div class="col-lg-8 ">
                             <h1 class='display-1 fontTA my-5 '>{travel.title}</h1>

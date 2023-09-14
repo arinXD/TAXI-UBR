@@ -4,16 +4,32 @@
 
 .car-gallery-row {
     display: flex;
+    flex-direction: column;
 }
 
 .full-width {
     flex: 1 !important;
 }
-
+.modal.show .modal-dialog {
+    /* width: 100%; */
+}
+.badge{
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.795) !important;
+    color: rgb(0, 0, 0) !important;
+    top: 10px;
+    right: 10px;
+    /* padding: .5rem 1rem; */
+    font-size: .7rem;
+    font-weight: bold;
+}
 .car-gallery .car-gallery-item {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     width: 100%;
     flex: 0 0 calc(50%);
+    position: relative;
+    overflow: hidden;
 }
 
 .car-gallery .car-gallery-item img {
@@ -23,13 +39,24 @@
     background-position: 50% 50%;
     transition: transform 0.2s ease;
     cursor: pointer;
+    transition: all 0.5s ease 0s;
 }
 
 .car-gallery .car-gallery-item img:hover {
-    /* transform: scale(1.1); */
     opacity: .9;
+    transform: scale(1.02);
 }
-
+.destination-desc{
+    font-size: 1.25rem;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #000000d4, #00000085, #31313175, #5050505c, #f8f8f800);
+}
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -49,6 +76,7 @@
     padding: 0 !important;
     text-align: center;
     position: relative;
+    width: 100%;
 }
 .modal-header {
     padding: 0 !important;
@@ -62,17 +90,21 @@
 }
 .modal-body {
     padding: 0 !important;
+    width: 100%;
 }
 .modal {
     padding: 0 !important;
+    --bs-modal-width: 70%;
+    width: 100%;
 }
-.modal.show .modal-dialog {
-    /* margin: 0 auto; */
+.modal-backdrop.show {
+    opacity: .9 !important;
 }
+
 .modal-content img {
     width: 100%;
     height: 80vh;
-    object-fit: cover;
+    object-fit: contain;
     background-color: black;
 }
 .modal-header .btn-close {
@@ -95,4 +127,16 @@
 
 .close-button:hover {
     background-color: #555;
+}
+
+@media screen and (min-width: 1023px) {
+    .car-gallery .car-gallery-item img {
+        height: 40vh;
+    }
+    .destination-desc{
+        font-size: 1.5rem;
+    }
+    .car-gallery-row {
+        flex-direction: row;
+    }
 }
