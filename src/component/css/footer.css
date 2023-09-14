@@ -14,9 +14,12 @@ footer ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 footer ul li {
     padding: 1em 0;
+    
+    
 }
 footer ul li a{
     text-decoration: none;

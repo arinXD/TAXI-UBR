@@ -3,22 +3,22 @@
 }
 
 .imgBox2 {
-    background-image: url('../img/profile.jpg');
+    background-image: url('../img/LIne.jpg');
     position: relative;
     height: 90vh;
     width: auto;
-    background-size: cover;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
 .imgBox3 {
-    background-image: url('../img/profile.jpg');
+    background-image: url('../img/LIne.jpg');
     position: relative;
     height: 50vh;
     width: auto;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -26,15 +26,16 @@
 
 .centeredss {
     position: absolute;
-    top: 30%;
+    top: 33%;
     left: 7%;
 }
 
 .centeredss2 {
     position: relative;
-    left: 7%;
+    left: -7%;
 
 }
+
 
 .padddd {
     padding-right: 100px;
@@ -58,7 +59,7 @@
 
     .centeredss2 {
         position: relative;
-        left: 0%;
+        left: -5%;
         padding-right: 20px !important;
         padding-left: 20px !important;
     }

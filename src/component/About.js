@@ -16,8 +16,8 @@ const About = () => {
                             <div className="centeredss px-5">
                                 <div className='text-start text-white'>
                                     <p>CONTACT US</p>
-                                    <h1 className='fw-bold mt-3 display-4'>Contact our Support and Sales team</h1>
-                                    <p className='mt-2'>Need to get in touch with the team? We're all ears.</p>
+                                    <h1 className='fw-bold mt-3 display-4'>Contact our Support.</h1>
+                                    <p className='mt-3'>In need of contacting the team or not? We're ready to receive your messages.</p>
                                 </div>
                             </div>
 
@@ -50,21 +50,21 @@ const About = () => {
                     <div className="col-md-6 centeredss3">
                         <div className='text-start text dark'>
                             <h2 className='fw-bold'>Support</h2>
-                            <p className='h5 mt-3 lh-base'>We have a support portal that has the answers to dozens of the most common questions about Copper! Check it out here.</p>
-                            <p className='h5 mt-3 lh-base'>If you don't find what you need, please chat us through the Copper app.</p>
+                            <p className='h5 mt-3 lh-base'>We have a support portal that has the answers to dozens of the most common questions about TAXI UBER THAILAND! <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">Check it out here.</a></p>
+                            {/* <p className='h5 mt-3 lh-base'>If you don't find what you need, please chat us through LINE</p> */}
                         </div>
                         <div className='text-start text dark mt-5'>
                             <h2 className='fw-bold'>Sales</h2>
-                            <p className='h5 mt-3 lh-base'>Interested in learning more about Copper? Contact our product experts at sales@copper.com.</p>
+                            <p className='h5 mt-3 lh-base'>Are you interested in contacting a taxi? Contact us now! <a className="text-decoration-none" href="tel:+66951795925">095 179 5925</a></p>
                         </div>
-                        <div className='text-start text dark mt-5'>
+                        {/* <div className='text-start text dark mt-5'>
                             <h2 className='fw-bold'>Business Development</h2>
                             <p className='h5 mt-3 lh-base'>Are you a reseller, affiliate, or association that would like to partner with Copper? Get connected with our Partner team at partners@copper.com.</p>
                         </div>
                         <div className='text-start text dark mt-5'>
                             <h2 className='fw-bold'>General Questions</h2>
                             <p className='h5 mt-3 lh-base'>Have a general question for us? Contact us at info@copper.com.</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
