@@ -124,17 +124,33 @@
     font-size: 14px;
     transition: background-color 0.2s ease;
 }
+.clearBtn{
+    padding: 0 !important;
+    text-decoration: none !important;
+    display: block !important;
+    margin-top: 0 !important;
+    color: #00000000 !important;
+    border: 0 !important;
+    width: 100% !important;
+}
 
 .close-button:hover {
     background-color: #555;
 }
-
+@media screen and (min-width: 760px) {
+    .car-gallery-row {
+        flex-direction: row;
+    }
+    .car-gallery .car-gallery-item img {
+        height: 40vh;
+    }
+}
 @media screen and (min-width: 1023px) {
     .car-gallery .car-gallery-item img {
         height: 40vh;
     }
     .destination-desc{
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
     .car-gallery-row {
         flex-direction: row;
