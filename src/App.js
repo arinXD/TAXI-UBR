@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './component/Header';
 import Hero from './component/hero/Hero';
-import Map from './component/Map';
 import Vector from './component/Vector';
 import Footer from './component/Footer';
 import HeroDestiantion from './component/hero/HeroDestiantion';
@@ -29,6 +28,5 @@ function App() {
     </>
   );
 }
-{/* <Map/> */}
 
 export default App;
