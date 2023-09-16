@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./css/header.css"
 import { Link } from "react-router-dom";
 const Header = (props)=>{
@@ -6,6 +6,15 @@ const Header = (props)=>{
 
     function handleClick(){
         setBtnState(btnState=>!btnState)
+    }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    function contact() {
+        setTimeout(()=>{
+            window.scrollTo(0, 500);
+        } , 500)
+        
     }
 
     let toggleClassCheck = btnState ? 'active' : null
@@ -21,7 +30,7 @@ const Header = (props)=>{
                     <li><Link to="/tour">สถานที่ท่องเที่ยว</Link></li>
                     <li><Link to="/reviews">รีวิว</Link></li>
                     <li><Link to="/about">เกี่ยวกับเรา</Link></li>
-                    <li><Link className="cta" to="/about"><button>ติดต่อ</button></Link></li>
+                    <li><Link className="cta" to="/about" onClick={contact}><button>ติดต่อ</button></Link></li>
                 </ul>
             </nav>
         </header>
