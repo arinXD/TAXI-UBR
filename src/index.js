@@ -15,55 +15,55 @@ const router = createBrowserRouter([
     element: (<App />),
   },
   {
-    path: "tour",
+    path: "/tour",
     element: (<Tour />),
   },
   {
-    path: "reviews",
+    path: "/reviews",
     element: (<Review />),
   },
   {
-    path: "about",
+    path: "/about",
     element: (<About />),
   },
   {
-    path: "bluelagoon",
+    path: "/bluelagoon",
     element: (<Travel />),
   },
   {
-    path: "takayai",
+    path: "/takayai",
     element: (<Travel />),
   },
   {
-    path: "phamanfun",
+    path: "/phamanfun",
     element: (<Travel />),
   },
   {
-    path: "haina",
+    path: "/haina",
     element: (<Travel />),
   },
   {
-    path: "changarena",
+    path: "/changarena",
     element: (<Travel />),
   },
   {
-    path: "watphasonkaew",
+    path: "/watphasonkaew",
     element: (<Travel />),
   },
   {
-    path: "ubonrat",
+    path: "/ubonrat",
     element: (<Travel />),
   },
   {
-    path: "khaokho",
+    path: "/khaokho",
     element: (<Travel />),
   },
   {
-    path: "phuthapbuek",
+    path: "/phuthapbuek",
     element: (<Travel />),
   },
   {
-    path: "airport",
+    path: "/airport",
     element: (<Travel />),
   },
 ]);
@@ -73,7 +73,5 @@ root.render(
     <RouterProvider router={router} />
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
