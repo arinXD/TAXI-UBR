@@ -41,7 +41,7 @@ const About = () => {
             <div className='container marconn'>
                 <div className="row">
                     <div className="col-md-6 position-relative">
-                        <div className="centeredss2 px-5">
+                        <div className="centeredss2 mb-4">
                             <div className='text-start text dark'>
                                 <p >LET'S CHAT</p>
                                 <h1 className='fw-bold mt-3 display-4 padddd'>ช่องทางการติดต่อ</h1>
