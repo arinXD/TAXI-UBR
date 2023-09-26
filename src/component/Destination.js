@@ -80,11 +80,11 @@ const Destination = () => {
                 <h1>สถานที่ท่องเที่ยว</h1>
                 <h5>พักผ่อนเพื่อหาประสบการณ์ที่สนุกสนานในเมืองขอนแก่นกับเรา !</h5>
                 <ul class="destination-list">
-                    {data.slice(0, showMore ? data.length : 8).map((e, index) => {
+                    {data.slice(0, showMore ? data.length : 5).map((e, index) => {
                         return <DestinationItem key={index} {...e} />;
                     })}
                 </ul>
-                {data.length > 8 && (
+                {data.length >= 5 && (
                     <button onClick={toggleShowMore}>
                         {showMore ? <i class="bi bi-arrow-up-circle pe-2"></i> : <i class="bi bi-arrow-down-circle pe-2"></i>}{" "}
                         {showMore ? "Show less" : "Select more"}

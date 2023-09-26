@@ -7,9 +7,28 @@ import ReviewGallery from "./ReviewGallery";
 import Pagination from "./Pagination";
 const Review = ()=>{
     const [images, setImageData] = useState([]);
+    const [imagesPerPage, setImagesPerPage] = useState(8);
 
-    // const images = [/* ... */]; // Your array of image URLs
-    const imagesPerPage = 9; // Number of images per page
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth < 760) {
+            setImagesPerPage(8);
+          } else if (window.innerWidth >= 760 && window.innerWidth < 1024) {
+            setImagesPerPage(9);
+          } else {
+            setImagesPerPage(12);
+          }
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+    }, [])
+
     const [currentPage, setCurrentPage] = useState(1);
   
     const totalPages = Math.ceil(images.length / imagesPerPage);
