@@ -12,7 +12,7 @@ export default ()=>{
                     display:'block',
                     height: '400px',
                     objectFit:'contain'
-                }} src={require('./img/marker3.png')} alt="car"/>
+                }} src={require('./img/marker4.png')} alt="car"/>
             </div>
             <div className="service-wrap">
                 <ul className="detail-list">
