@@ -7,12 +7,12 @@ export default ()=>{
             <div className="hero-wrap">
                 <h1>บริการแท็กซี่</h1>
                 <p className="describe">พูดคุยตกลงราคาได้ค่ะ ขอบคุณที่ใช้บริการ <i class="bi bi-emoji-smile-fill"></i> </p>
-                <img style={{
+                {/* <img style={{
                     width:'100%',
                     display:'block',
                     height: '400px',
                     objectFit:'contain'
-                }} src={require('./img/marker4.png')} alt="car"/>
+                }} src={require('./img/marker4.png')} alt="car"/> */}
             </div>
             <div className="service-wrap">
                 <ul className="detail-list">
