@@ -11,7 +11,7 @@ const Hero = ()=>{
     return(
         <section className="hero">
             <div className="slogan">
-                <h1>Start your journey by one click, explore realm of Khon Kaen!</h1>
+                <h1>บริการรถรับส่ง ทั่วประเทศ</h1>
                 <p>ให้บริการนำเที่ยวและแนะนำสถานที่ท่องเที่ยวที่น่าสนใจในขอนแก่น</p>
             </div>
             <div className="hero-img">
