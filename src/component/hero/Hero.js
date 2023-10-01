@@ -1,7 +1,6 @@
 import "../css/hero.css"
-import place1 from "../img/place1.jpg"
-import place2 from "../img/place2.jpg"
 import hero from "../img/marker4.png"
+import whatsApp from "../img/whatsapp2.jpg"
 import { useEffect } from "react"
 const Hero = ()=>{
 
@@ -16,33 +15,35 @@ const Hero = ()=>{
             </div>
             <div className="hero-img">
                 <img className="people" src={hero}/>
-                {/* <p className="train">
-                    <i class="bi bi-train-front-fill"></i>
-                </p>
-                <p className="plane">
-                    <i class="bi bi-airplane-fill"></i>
-                    <span>Khon Kaen</span>
-                </p> */}
-                {/* <div className="banner">
-                    <img src={place1}/>
-                    <p className="title">
-                        โฮมสเตย์ตากะยาย ภูผาม่าน
-                    </p>
-                    <p className="location">
-                        <i class="bi bi-geo-alt-fill" style={{color:"#42a7c3"}}></i>
-                        <span>อำเภอภูผาม่าน ขอนแก่น</span>
+            </div>
+            <div className="mt-4">
+                <h2 className="text-center fw-bold mb-3">WhatsApp</h2>
+                <img className="people" src={whatsApp}
+                style={{
+                    maxWidth:"100%",
+                    height:'50vh',
+                    objectFit:"contain",
+                    display:'block',
+                    margin:'0 auto',
+                    border:"1px solid #b3b3b3a1"
+                }}
+                />
+            </div>
+            <div className="mt-4" style={{width:'293px', margin:"0 auto"}}>
+                <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
+                    {/* <h2 className='fw-bold' style={{color:"#06C755"}}>@Line</h2> */}
+                    <p className='h5 mt-3 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
+                        <i style={{color:"#06C755",marginRight:"1.8em"}} class="bi bi-line"></i>
+                        <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">@Snook</a>
                     </p>
                 </div>
-                <div className="banner">
-                    <img src={place2}/>
-                    <p className="title">
-                        คัม ชาบู ปิ้งย่าง โคขุนโพนยางคำ
-                    </p>
-                    <p className="location">
-                        <i class="bi bi-geo-alt-fill" style={{color:"#42a7c3"}}></i>
-                        <span>อำเภอเมืองขอนแก่น ขอนแก่น</span>
-                    </p>
-                </div> */}
+                <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
+                    {/* <h2 className='fw-bold'>เบอร์โทรศัพท์</h2> */}
+                    <p className='h5 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
+                        <i style={{marginRight:"1.8em"}} class="bi bi-telephone-fill"></i>
+                        <a className="text-decoration-none" href="tel:0951795925">095-179-5925</a>
+                        </p>
+                </div>
             </div>
         </section>
     )
