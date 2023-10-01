@@ -3,7 +3,7 @@ import "./css/servicelist.css"
 
 export default ()=>{
     return(
-        <div className="service-list px-4">
+        <div className="service-list me-3">
             <div className="hero-wrap">
                 <h1>บริการแท็กซี่</h1>
                 <p className="describe">พูดคุยตกลงราคาได้ค่ะ ขอบคุณที่ใช้บริการ <i class="bi bi-emoji-smile-fill"></i> </p>
