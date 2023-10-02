@@ -1,6 +1,6 @@
 import "../css/hero.css"
 import hero from "../img/marker4.png"
-import whatsApp from "../img/whatsapp2.jpg"
+import whatsApp from "../img/whatAppCut.png"
 import { useEffect } from "react"
 const Hero = ()=>{
 
@@ -16,16 +16,18 @@ const Hero = ()=>{
             <div className="hero-img">
                 <img className="people" src={hero}/>
             </div>
-            <div className="mt-4">
-                <h2 className="text-center fw-bold mb-3">WhatsApp</h2>
-                <img className="people" src={whatsApp}
+            <div className="mt-5">
+                <h2 className="text-center fw-bold mb-4">WhatsApp</h2>
+                <img className="people px-1 pb-1" src={whatsApp}
                 style={{
                     maxWidth:"100%",
                     height:'50vh',
                     objectFit:"contain",
                     display:'block',
                     margin:'0 auto',
-                    border:"1px solid #b3b3b3a1"
+                    backgroundColor:"black",
+                    borderRadius:'5px'
+                    // border:"1px solid #b3b3b3a1"
                 }}
                 />
             </div>
