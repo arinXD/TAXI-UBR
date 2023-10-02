@@ -27,9 +27,9 @@ const Travel = () => {
                 </div>
 
 
-                <div class='container margin-top'>
+                <div class='container margin-top mt-1'>
                     {/* breadcrumb */}
-                    <nav aria-label="breadcrumb">
+                    <nav aria-label="breadcrumb mt-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><Link to="/tour" className="text-decoration-none">สถานที่ท่องเที่ยว</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">{travel.title}</li>
@@ -48,7 +48,7 @@ const Travel = () => {
                             <p class='lh-lg'>☎️ โทร : {travel.tel}</p>
                             <p class='lh-lg mb-5'>📍 {travel.location}</p>
                             <div className="embed-map">
-                                <iframe src={travel.mapSrc}
+                                <iframe className="w-100" style={{height:"20rem"}} src={travel.mapSrc}
                                     title="Google Maps"
                                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
@@ -63,11 +63,7 @@ const Travel = () => {
                                 alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title fw-bold">{travel.overAllTitle}</h5>
-                                    <p class="card-text">{travel.overAllContent}</p>
-                                    <div class='d-flex justify-content-between'>
-                                        <p class="card-text"><small class="text-muted fw-bold">by {travel.overAllAuthor}</small></p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
+                                    <p class="card-text mb-3">{travel.overAllContent}</p>
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header" id="flush-headingOne">
@@ -79,14 +75,6 @@ const Travel = () => {
                                                 <div className="accordion-body">
                                                     <div className="card bg-dark text-white border-img">
                                                         <img src={travel.review1Img} className="card-img border-img bg-shadow" alt="..."></img>
-                                                        <div className="card-img-overlay">
-                                                            <h5 className="card-title">{travel.review1Title}</h5>
-                                                            <p className="card-text">{travel.review1Content}</p>
-                                                            <div className='d-flex justify-content-between'>
-                                                                <p className="card-text"><small className="text-white fw-bold">by {travel.review1Author}</small></p>
-                                                                <p className="card-text"><small className="text-white">Last updated 3 mins ago</small></p>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -101,14 +89,7 @@ const Travel = () => {
                                                 <div class="accordion-body">
                                                     <div class="card bg-dark text-white border-img">
                                                         <img src={travel.review2Img} class="card-img border-img bg-shadow" alt="..."></img>
-                                                        <div class="card-img-overlay">
-                                                            <h5 class="card-title">{travel.review2Title}</h5>
-                                                            <p class="card-text">{travel.review2Content}</p>
-                                                            <div class='d-flex justify-content-between '>
-                                                                <p class="card-text"><small class="text-white fw-bold ">by {travel.review2Author}</small></p>
-                                                                <p class="card-text"><small class="text-white">Last updated 3 mins ago</small></p>
-                                                            </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,14 +104,6 @@ const Travel = () => {
                                                 <div class="accordion-body">
                                                     <div class="card bg-dark text-white border-img">
                                                         <img src={travel.review3Img} class="card-img border-img bg-shadow" alt="..."></img>
-                                                        <div class="card-img-overlay">
-                                                            <h5 class="card-title">{travel.review3Title}</h5>
-                                                            <p class="card-text">{travel.review3Content}</p>
-                                                            <div class='d-flex justify-content-between'>
-                                                                <p class="card-text"><small class="text-white fw-bold">by {travel.review3Author}</small></p>
-                                                                <p class="card-text"><small class="text-white">Last updated 3 mins ago</small></p>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
