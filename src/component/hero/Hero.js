@@ -18,7 +18,7 @@ const Hero = ()=>{
             </div>
             <div className="mt-5">
                 <h2 className="text-center fw-bold mb-4">WhatsApp</h2>
-                <img className="people px-1 pb-1" src={whatsApp}
+                <img className="people" src={whatsApp}
                 style={{
                     maxWidth:"100%",
                     height:'50vh',
@@ -26,7 +26,8 @@ const Hero = ()=>{
                     display:'block',
                     margin:'0 auto',
                     backgroundColor:"black",
-                    borderRadius:'5px'
+                    borderRadius:'5px',
+                    padding: "0 4px 4px",
                     // border:"1px solid #b3b3b3a1"
                 }}
                 />
