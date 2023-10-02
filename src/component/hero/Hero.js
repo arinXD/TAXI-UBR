@@ -22,7 +22,7 @@ const Hero = ()=>{
                 style={{
                     maxWidth:"100%",
                     height:'390px',
-                    objectFit:"contain",
+                    objectFit:"cover",
                     display:'block',
                     margin:'0 auto',
                     backgroundColor:"black",
