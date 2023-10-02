@@ -21,7 +21,7 @@ const Hero = ()=>{
                 <img className="people" src={whatsApp}
                 style={{
                     maxWidth:"100%",
-                    height:'50vh',
+                    height:'390px',
                     objectFit:"contain",
                     display:'block',
                     margin:'0 auto',
