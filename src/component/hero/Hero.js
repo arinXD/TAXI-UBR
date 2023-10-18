@@ -1,11 +1,11 @@
 import "../css/hero.css"
 import hero from "../img/marker5.jpg"
 import whatsApp from "../img/whatAppCut.png"
-import bgVideo1 from "./video/hero.mp4";
-import bgVideo2 from "./video/hero2.mp4";
-import bgVideo3 from "./video/hero3.mp4";
+import bgVideo1 from "./video/hero_com.mp4";
+// import bgVideo2 from "./video/hero2.mp4";
+// import bgVideo3 from "./video/hero3.mp4";
 import { useEffect, useState } from "react"
-const videoSources = [bgVideo1, bgVideo2, bgVideo3];
+// const videoSources = [bgVideo1, bgVideo2, bgVideo3];
 const Hero = ()=>{
 
     const [isVisible, setIsVisible] = useState(false);
@@ -34,54 +34,31 @@ const Hero = ()=>{
         }, delay);
         return () => clearTimeout(timeoutId);
     }, []);
-    const handleVideoEnded = () => {
-        console.log(currentVideoIndex);
-    
-        // Calculate the next video index
-        const nextVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-    
-        console.log(nextVideoIndex);
-    
-        // Get the video element
-        const videoElement = document.getElementById('hero-video');
-    
-        if (videoElement) {
-            // Update the video source to the next video
-            videoElement.src = videoSources[nextVideoIndex];
-    
-            // Listen for the 'canplaythrough' event to start playing the new video
-            videoElement.addEventListener('canplaythrough', () => {
-                videoElement.play().catch(error => {
-                    console.error('Error playing video:', error);
-                });
-            }, { once: true });  // Listen only once
-        }
-    
-        // Update the current video index
-        setCurrentVideoIndex(nextVideoIndex);
-    };
-    
     // const handleVideoEnded = () => {
     //     console.log(currentVideoIndex);
-    //     let id=0;
-    //     if(currentVideoIndex===0){
-    //         id++;
-    //     }
-    //     else if(currentVideoIndex === videoSources.length - 1){
-    //         id = 0;
-    //     }else{
-    //         id = currentVideoIndex+1;
-    //     }
-    //     console.log(id);
-    //     setCurrentVideoIndex(id)
+    
+    //     // Calculate the next video index
+    //     const nextVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+    
+    //     console.log(nextVideoIndex);
+    
+    //     // Get the video element
     //     const videoElement = document.getElementById('hero-video');
-
+    
     //     if (videoElement) {
-    //         videoElement.src = videoSources[currentVideoIndex]
-    //         videoElement.play().catch(error => {
-    //             console.error('Error playing video:', error);
-    //         });
+    //         // Update the video source to the next video
+    //         videoElement.src = videoSources[nextVideoIndex];
+    
+    //         // Listen for the 'canplaythrough' event to start playing the new video
+    //         videoElement.addEventListener('canplaythrough', () => {
+    //             videoElement.play().catch(error => {
+    //                 console.error('Error playing video:', error);
+    //             });
+    //         }, { once: true });  // Listen only once
     //     }
+    
+    //     // Update the current video index
+    //     setCurrentVideoIndex(nextVideoIndex);
     // };
 
     return(
@@ -130,6 +107,7 @@ const Hero = ()=>{
                 <div className="hero-img">
                 <video
                     id="hero-video"
+                    loop
                     autoPlay
                     muted
                     playsInline
@@ -145,7 +123,7 @@ const Hero = ()=>{
                         opacity: 1,
                     }}
                 >
-                    <source src={videoSources[currentVideoIndex]} type="video/mp4" />
+                    <source src={bgVideo1} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 </div>
