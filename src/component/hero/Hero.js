@@ -112,7 +112,6 @@ const Hero = ()=>{
                     muted
                     playsInline
                     preload="auto"
-                    onEnded={handleVideoEnded}
                     style={{
                         borderRadius: "16px",
                         width: "100%",
