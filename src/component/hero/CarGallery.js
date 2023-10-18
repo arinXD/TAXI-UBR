@@ -18,7 +18,7 @@ export default ()=>{
     return(
     <>
         <div className="car-gallery">
-            <div class="car-gallery-row">
+            <div className="car-gallery-row">
                 <div className="car-gallery-item">
                     <img src={'./review/review (43).jpg'} onClick={() => openModal('./review/review (43).jpg')}/>
                 </div>
@@ -26,7 +26,7 @@ export default ()=>{
                     <img src={'./review/review (38).jpg'} onClick={() => openModal('./review/review (38).jpg')}/>
                 </div>
             </div>
-            <div class="car-gallery-row">
+            <div className="car-gallery-row">
                 <div className="car-gallery-item full-width">
                     <img src={'./review/review (17).jpg'} onClick={() => openModal('./review/review (17).jpg')}/>
                 </div>

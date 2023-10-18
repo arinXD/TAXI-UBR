@@ -21,13 +21,13 @@ const Travel = () => {
     return (
         <>
             <Header />
-            <div class='maintravel'>
+            <div className='maintravel'>
                 <div className='contain'>
-                    <div class={'imgBox '+travel.url}></div>
+                    <div className={'imgBox '+travel.url}></div>
                 </div>
 
 
-                <div class='container margin-top mt-1'>
+                <div className='container margin-top mt-1'>
                     {/* breadcrumb */}
                     <nav aria-label="breadcrumb mt-5">
                         <ol className="breadcrumb">
@@ -36,35 +36,35 @@ const Travel = () => {
                         </ol>
                     </nav>
                     
-                    <div class="row">
-                        <div class="col-lg-8 ">
-                            <h1 class='display-1 fontTA my-5 '>{travel.title}</h1>
-                            <p class='padding-right lh-lg text-just'>
+                    <div className="row">
+                        <div className="col-lg-8 ">
+                            <h1 className='display-1 fontTA my-5 '>{travel.title}</h1>
+                            <p className='padding-right lh-lg text-just'>
                                 {travel.content}
                             </p>
-                            <p class='lh-lg font-bold'>ข้อมูลติดต่อ :</p>
-                            <p class='lh-lg'>FB : {travel.fb}</p>
-                            <p class='lh-lg'>🧭 {travel.time}</p>
-                            <p class='lh-lg'>☎️ โทร : {travel.tel}</p>
-                            <p class='lh-lg mb-5'>📍 {travel.location}</p>
+                            <p className='lh-lg font-bold'>ข้อมูลติดต่อ :</p>
+                            <p className='lh-lg'>FB : {travel.fb}</p>
+                            <p className='lh-lg'>🧭 {travel.time}</p>
+                            <p className='lh-lg'>☎️ โทร : {travel.tel}</p>
+                            <p className='lh-lg mb-5'>📍 {travel.location}</p>
                             <div className="embed-map">
                                 <iframe className="w-100" style={{height:"20rem"}} src={travel.mapSrc}
                                     title="Google Maps"
                                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <div class="padding-top col-lg-4 ">
-                            <h2 class=' mb-5'>{travel.storyTitle}</h2>
-                            <div class="card mb-3 border-0">
+                        <div className="padding-top col-lg-4 ">
+                            <h2 className=' mb-5'>{travel.storyTitle}</h2>
+                            <div className="card mb-3 border-0">
                                 <img
                                 // src={require(travel.overAllImg)}
                                 src={`${travel.storyImg}`}
-                                class="card-img-top border-img bg-shadow"
+                                className="card-img-top border-img bg-shadow"
                                 alt="..."/>
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">{travel.overAllTitle}</h5>
-                                    <p class="card-text mb-3">{travel.overAllContent}</p>
-                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div className="card-body">
+                                    <h5 className="card-title fw-bold">{travel.overAllTitle}</h5>
+                                    <p className="card-text mb-3">{travel.overAllContent}</p>
+                                    <div className="accordion accordion-flush" id="accordionFlushExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header" id="flush-headingOne">
                                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -79,31 +79,31 @@ const Travel = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header" id="flush-headingTwo">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                                     Place Reviews #2
                                                 </button>
                                             </h2>
-                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <div class="card bg-dark text-white border-img">
-                                                        <img src={travel.review2Img} class="card-img border-img bg-shadow" alt="..."></img>
+                                            <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div className="accordion-body">
+                                                    <div className="card bg-dark text-white border-img">
+                                                        <img src={travel.review2Img} className="card-img border-img bg-shadow" alt="..."></img>
                                                         
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="flush-headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header" id="flush-headingThree">
+                                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                                     Place Reviews #3
                                                 </button>
                                             </h2>
-                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">
-                                                    <div class="card bg-dark text-white border-img">
-                                                        <img src={travel.review3Img} class="card-img border-img bg-shadow" alt="..."></img>
+                                            <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div className="accordion-body">
+                                                    <div className="card bg-dark text-white border-img">
+                                                        <img src={travel.review3Img} className="card-img border-img bg-shadow" alt="..."></img>
                                                     </div>
                                                 </div>
                                             </div>
@@ -113,7 +113,7 @@ const Travel = () => {
                             </div>
                         </div>
                     </div>
-                    <hr class='mt-5 text-white'></hr>
+                    <hr className='mt-5 text-white'></hr>
                     
 
                 </div>

@@ -51,12 +51,12 @@ const About = () => {
                     <div className="col-md-6 centeredss3" id="contact">
                         <div className='text-start text dark'>
                             <h2 className='fw-bold' style={{color:"#06C755"}}>@Line</h2>
-                            <p className='h5 mt-3 lh-base'><i style={{color:"#06C755",marginRight:".5rem"}} class="bi bi-line"></i> <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">Snook</a></p>
+                            <p className='h5 mt-3 lh-base'><i style={{color:"#06C755",marginRight:".5rem"}} className="bi bi-line"></i> <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">Snook</a></p>
                             {/* <p className='h5 mt-3 lh-base'>If you don't find what you need, please chat us through LINE</p> */}
                         </div>
                         <div className='text-start text dark mt-5'>
                             <h2 className='fw-bold'>เบอร์โทรศัพท์</h2>
-                            <p className='h5 mt-3 lh-base'><i style={{marginRight:".5rem"}} class="bi bi-telephone-fill"></i> <a className="text-decoration-none" href="tel:+66951795925">095-179-5925</a></p>
+                            <p className='h5 mt-3 lh-base'><i style={{marginRight:".5rem"}} className="bi bi-telephone-fill"></i> <a className="text-decoration-none" href="tel:+66951795925">095-179-5925</a></p>
                         </div>
                     </div>
                 </div>

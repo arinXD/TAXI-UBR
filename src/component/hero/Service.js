@@ -7,7 +7,7 @@ const Service = ()=>{
         <div className="service">
             <div className="hero-wrap">
                 <h1>รูปภาพการให้บริการ</h1>
-                <p>ดูภาพรีวิวการให้บริการ ไม่ว่าท่านจะไปที่ ท่านจะไปกับใคร ไปไหน ไปกันเพื่อนจ๋า</p>
+                <p>ดูภาพรีวิวการให้บริการ</p>
             </div>
             <CarGallery/>
             <Link to="/reviews" className="link-reviews">รีวิวเพิ่มเติม</Link>
