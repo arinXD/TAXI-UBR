@@ -130,8 +130,8 @@ const Hero = ()=>{
                 <div className="hero-img">
                 <video
                     id="hero-video"
-                    muted={true}
-                    autoplay={true}
+                    muted
+                    autoplay
                     onEnded={handleVideoEnded}
                     style={{
                         borderRadius: "16px",
