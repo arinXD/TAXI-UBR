@@ -1,11 +1,10 @@
 import "../css/hero.css"
-import hero from "../img/marker5.jpg"
+import hero from "../img/marker5.png"
 import whatsApp from "../img/whatAppCut.png"
 import bgVideo1 from "./video/hero_com.mp4";
-// import bgVideo2 from "./video/hero2.mp4";
-// import bgVideo3 from "./video/hero3.mp4";
+
 import { useEffect, useState } from "react"
-// const videoSources = [bgVideo1, bgVideo2, bgVideo3];
+
 const Hero = ()=>{
 
     const [isVisible, setIsVisible] = useState(false);
@@ -64,8 +63,11 @@ const Hero = ()=>{
     return(
         <section className={`hero ${isVisible ? "slide-up active" : "slide-up"}`}>
             <div style={backgroundImageStyle}
-            className="row gap-3 mb-5 p-5 justify-content-center align-items-center">
-                <div className="slogan col-12 col-xl-5 text-white">
+            className="row gap-5 mb-5 p-5 justify-content-center align-items-center">
+                <div className="hero-img-marker col-12 col-md-5 col-xl-5">
+                    <img className="people" src={hero}/>
+                </div>
+                <div className="slogan col-12 col-md-5 col-xl-5 text-white">
                     <h1 className="text-start text-white mb-4" style={{fontWeight:"bold", fontSize:"2em",}}>แท็กซี่ขอนแก่น</h1>
                     <h2 className="text-white mb-4 text-start">
                         <span className="me-3 mb-2 d-inline-block">
@@ -144,17 +146,21 @@ const Hero = ()=>{
                     />
                 </div>
                 <div className="col-lg-6" style={{width:'293px', margin:"0 auto"}}>
-                    <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
-                        <p className='h5 mt-3 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
-                            <i style={{color:"#06C755",marginRight:"1.8em"}} className="bi bi-line"></i>
-                            <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">@Snook</a>
-                        </p>
-                    </div>
-                    <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
-                        <p className='h5 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
-                            <i style={{marginRight:"1.8em"}} className="bi bi-telephone-fill"></i>
-                            <a className="text-decoration-none" href="tel:0951795925">095-179-5925</a>
-                            </p>
+                    <div className="row align-items-center justify-content-center h-100">
+                        <div>
+                            <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
+                                <p className='h5 mt-3 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
+                                    <i style={{color:"#06C755",marginRight:"1.8em"}} className="bi bi-line"></i>
+                                    <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">@Snook</a>
+                                </p>
+                            </div>
+                            <div className='text-start text dark' style={{borderRadius:"8px", borderBottom:"rgba(0, 0, 0, 0.05)"}}>
+                                <p className='h5 lh-base py-3 px-2 rounded' style={{fontSize:"1.5em"}}>
+                                    <i style={{marginRight:"1.8em"}} className="bi bi-telephone-fill"></i>
+                                    <a className="text-decoration-none" href="tel:0951795925">095-179-5925</a>
+                                    </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-import taxis from "../img/marker3.png"
 import "../css/service.css"
 import CarGallery from "./CarGallery"
 import { Link } from "react-router-dom"
