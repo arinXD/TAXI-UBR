@@ -1,5 +1,5 @@
 import "../css/hero.css"
-import hero from "../img/marker5.png"
+import hero from "../img/maker10.png"
 import whatsApp from "../img/whatAppCut.png"
 import bgVideo1 from "./video/hero_com.mp4";
 
@@ -16,7 +16,7 @@ const Hero = () => {
         borderRadius: "16px",
     };
     backgroundImageStyle = {
-        background: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45))',
+        background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85))',
         borderRadius: "16px",
         position: "relative"
     };
@@ -41,41 +41,41 @@ const Hero = () => {
                     <img className="people" src={hero} alt="taxi ubr" />
                 </div>
                 <div className="slogan col-12 col-md-5 col-xl-5 text-white">
-                    <h1 className="text-start text-white mb-4" style={{ fontWeight: "bold", fontSize: "2em", }}>"บริการคนเช่าพร้อมคนขับ"</h1>
-                    <h2 className="text-white mb-4 text-start">
-                        <span className="d-inline-block mb-1">แท็กซี่ขอนแก่น</span> <br />
+                    <h1 className="text-start text-white mb-5 text-center" style={{ fontWeight: "bold", fontSize: "2em", letterSpacing:".065em"}}>&#8220; บริการรถเช่าพร้อมคนขับ &#8221;</h1>
+                    <h2 className="text-white mb-5 text-start" style={{width:"fit-content", margin:"auto"}}>
+                        <span className="d-block mb-3 text-center" style={{fontSize:".8em"}}>แท็กซี่ขอนแก่น</span>
                         <span className="me-3 mb-2 d-inline-block">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg style={{color:"#22c55e"}} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
                         บริการรถแท็กซี่ <br />
                         <span className="me-3 mb-2 d-inline-block">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg style={{color:"#22c55e"}} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
                         แท็กซี่มิเตอร์ <br />
                         <span className="me-3 mb-2 d-inline-block">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg style={{color:"#22c55e"}} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
                         เหมารถแท็กซี่ <br />
                         <span className="me-3 mb-2 d-inline-block">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg style={{color:"#22c55e"}} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
                         เหมารถตู้ <br />
                         <span className="me-3 mb-2 d-inline-block">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <svg style={{color:"#22c55e"}} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </span>
                         รับส่งทั่วประเทศ
                     </h2>
-                    <p className="text-start">ให้บริการรับส่งสนามบินจองล่วงหน้า ให้บริการนำเที่ยวและแนะนำสถานที่ท่องเที่ยวที่น่าสนใจในขอนแก่นและทั่วประเทศ มีรถให้บริการรถแท็กซี่รถส่วนบุคคล เดินทางไปกับเราสะอาดปลอดภัย มั่นใจทุกเส้นทาง</p>
+                    <p className="text-start" style={{textIndent:"1em", textAlign:"justify"}}>ให้บริการรับส่งสนามบินจองล่วงหน้า ให้บริการนำเที่ยว แนะนำสถานที่ท่องเที่ยวที่น่าสนใจในขอนแก่น และทั่วประเทศ มีรถให้บริการ รถแท็กซี่รถส่วนบุคคล <br /><br /><i>เดินทางไปกับเราสะอาดปลอดภัย มั่นใจทุกเส้นทาง</i></p>
                 </div>
                 <div className="hero-img" alt="taxi ubr">
                     <video
