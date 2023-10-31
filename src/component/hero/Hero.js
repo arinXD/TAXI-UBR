@@ -8,7 +8,6 @@ import { useEffect, useState } from "react"
 const Hero = ()=>{
 
     const [isVisible, setIsVisible] = useState(false);
-    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
     let backgroundImageStyle = {
         backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("hero_2.jpg")',
@@ -33,39 +32,13 @@ const Hero = ()=>{
         }, delay);
         return () => clearTimeout(timeoutId);
     }, []);
-    // const handleVideoEnded = () => {
-    //     console.log(currentVideoIndex);
-    
-    //     // Calculate the next video index
-    //     const nextVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-    
-    //     console.log(nextVideoIndex);
-    
-    //     // Get the video element
-    //     const videoElement = document.getElementById('hero-video');
-    
-    //     if (videoElement) {
-    //         // Update the video source to the next video
-    //         videoElement.src = videoSources[nextVideoIndex];
-    
-    //         // Listen for the 'canplaythrough' event to start playing the new video
-    //         videoElement.addEventListener('canplaythrough', () => {
-    //             videoElement.play().catch(error => {
-    //                 console.error('Error playing video:', error);
-    //             });
-    //         }, { once: true });  // Listen only once
-    //     }
-    
-    //     // Update the current video index
-    //     setCurrentVideoIndex(nextVideoIndex);
-    // };
 
     return(
         <section className={`hero ${isVisible ? "slide-up active" : "slide-up"}`}>
             <div style={backgroundImageStyle}
             className="row gap-5 mb-5 p-5 justify-content-center align-items-center">
                 <div className="hero-img-marker col-12 col-md-5 col-xl-5">
-                    <img className="people" src={hero}/>
+                    <img className="people" src={hero} alt="taxi ubr"/>
                 </div>
                 <div className="slogan col-12 col-md-5 col-xl-5 text-white">
                     <h1 className="text-start text-white mb-4" style={{fontWeight:"bold", fontSize:"2em",}}>แท็กซี่ขอนแก่น</h1>
@@ -103,10 +76,7 @@ const Hero = ()=>{
                     </h2>
                     <p className="text-start">ให้บริการรับส่งสนามบินจองล่วงหน้า ให้บริการนำเที่ยวและแนะนำสถานที่ท่องเที่ยวที่น่าสนใจในขอนแก่น</p>
                 </div>
-                {/* <div className="hero-img-marker col-12 col-xl-5 ">
-                    <img className="people" src={hero}/>
-                </div> */}
-                <div className="hero-img">
+                <div className="hero-img" alt="taxi ubr">
                 <video
                     id="hero-video"
                     loop
@@ -132,7 +102,7 @@ const Hero = ()=>{
             <div className="row">
                 <div className="col-lg-6">
                     <h2 className="text-center fw-bold mb-4">WhatsApp</h2>
-                    <img className="people" src={whatsApp}
+                    <img className="people" src={whatsApp} alt="taxi ubr whats app"
                     style={{
                         maxWidth:"100%",
                         height:'390px',

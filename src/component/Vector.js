@@ -1,7 +1,7 @@
 import vector from "./img/vector.png"
 const Vector = ()=>{
     return(
-        <img className="vector" src={vector}/>
+        <img alt="vector" className="vector" src={vector}/>
     )
 }
 

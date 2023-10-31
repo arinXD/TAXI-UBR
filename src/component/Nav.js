@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./css/nav.css"
 import { Link } from "react-router-dom";
 const Nav = (props)=>{
