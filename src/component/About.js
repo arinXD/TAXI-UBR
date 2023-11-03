@@ -50,7 +50,7 @@ const About = () => {
                     </div>
                     <div className="col-md-6 centeredss3" id="contact">
                         <div className='text-start text dark'>
-                            <h2 className='fw-bold' style={{color:"#06C755"}}>@Line</h2>
+                            <h2 className='fw-bold' style={{color:"#06C755"}}>Line</h2>
                             <p className='h5 mt-3 lh-base'><i style={{color:"#06C755",marginRight:".5rem"}} className="bi bi-line"></i> <a className="text-decoration-none" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">Snook</a></p>
                             {/* <p className='h5 mt-3 lh-base'>If you don't find what you need, please chat us through LINE</p> */}
                         </div>
@@ -64,7 +64,7 @@ const About = () => {
             <div className='container marconn'>
                 <div className="row">
                     <div className='text-start text dark'>
-                        <h2 style={{    color: "#333333", borderLeft: "0.3rem solid #42a7c3", paddingLeft: "0.4rem"}}>รายละเอียด</h2>
+                        <h2 style={{    color: "#333333", borderLeft: "0.3rem solid #1d4ed8", paddingLeft: "0.4rem"}}>รายละเอียด</h2>
                         <p className='mt-3 lh-base'>
                         แท็กซี่ขอนแก่น  บริการแท็กซี่รับส่งต่างจังหวัด บริการแท็กซี่รับส่งต่างอำเภอ บริการแท็กซี่รับส่งทุกทิศทั่วไทย เหมารถ เหมารถตู้ เช่ารถตู้ พร้อมคนขับ แท็กซี่ขนาดใหญ่ 7 ที่นั่ง
                         แท็กซี่สนามบินขอนแก่น แท็กซี่บขส 3 ขอนแก่น 

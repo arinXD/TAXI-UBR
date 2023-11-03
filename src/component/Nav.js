@@ -19,6 +19,7 @@ const Nav = (props)=>{
             <nav>
                 <ul className={`nav_link ${toggleClassCheck}`} id="nav-menu">
                     <li><Link to="/tour">Tourist Attraction</Link></li>
+                    <li><Link to="/tour">Tourist Attraction</Link></li>
                     <li><Link to="/reviews">Reviews</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link className="cta" to="/about"><button>Contact Us</button></Link></li>

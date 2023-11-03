@@ -3,26 +3,37 @@
 }
 .service-list h1{
     color: #333333;
-    border-left: .3rem solid #42a7c3;
+    border-left: .3rem solid #1d4ed8;
     padding-left: .4rem;
 }
 .service-wrap{
     display: grid;
     grid-template-columns: 1fr;
-    /* flex-direction: column; */
+    gap: 1em;
 }
 
-.service-list .detail-list{
+.service-list ul{
     list-style-type: none;
     margin: 0 auto 1.5rem !important;
-    border: 1px solid #e8e8e8;
-    background-color: white;
-    border-radius: 7px;
-    padding: 20px 20px !important;
-    width: 100%;
-    height: 500px;
-    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
+.service-list ul li{
+    border: 1px solid #dadada;
+    border-radius: 50px;
+}
+.service-list ul li svg{
+    width: 30px;
+    height: 30px;
+}
+
+.service-list ul li div.circle{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    left: -11%;
+}
+
 .service-list .detail-list:last-child{
     margin-bottom: 0 !important;
 }
@@ -80,21 +91,21 @@
 }
 .grid-2{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important; 
 }
 .grid-2 li:first-child{
     margin-top: 0 !important;
 }
-.grid-2 li:last-child{
+/* .grid-2 li:last-child{
     margin-bottom: 1rem !important;
     border-bottom: 1px solid #dadada !important;
     padding-bottom: 1rem !important;
-}
+} */
 
 @media screen and (min-width: 760px) {
     .service-wrap{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2em;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
     }
     .service-list .detail-list{
         width: 100%;
@@ -102,11 +113,19 @@
     .service-list .detail-list:first-child{
         margin: 0 2rem 0 0 !important;
     }
+    .service-list ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
 }
 @media screen and (min-width: 1023px) {
+    .service-list ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
     .service-wrap{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2em;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
     }
     .service-list .detail-list{
         /* margin: 0 1rem 0 0 !important; */
