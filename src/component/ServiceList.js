@@ -99,7 +99,7 @@ const ServiceList = () => {
                     <li className='mb-2 py-2 px-2 d-flex align-items-center'><div className="circle me-3 "><UilCarSideview color="white" /></div> <span>รับส่งต่างจังหวัด ต่างอำเภอ ทั่วไทย</span></li>
                     <li className='mb-2 py-2 px-2 d-flex align-items-center'><div className="circle me-3 "><UilCar color="white" /></div> <span>เหมาแท็กซี่ไปต่างจังหวัด ต่างอำเภอ</span></li>
                     <li className='mb-2 py-2 px-2 d-flex align-items-center'><div className="circle me-3 "><UilBusSchool color="white" /></div> <span>เหมารถ เหมารถตู้ เช่ารถตู้</span></li>
-                    <li className='py-2 px-2 d-flex align-items-center'><div className="circle me-3 "><UilPlaneDeparture color="white" /></div>  <span>สนามบินสุวรรณภูมิ ภูเก็ต ดอนเมือง อุดรธานี ขอนแก่น ร้อยเอ็ด</span></li>
+                    <li className='mb-2 py-2 px-2 d-flex align-items-center'><div className="circle me-3 "><UilPlaneDeparture color="white" /></div>  <span>สนามบินสุวรรณภูมิ ภูเก็ต ดอนเมือง อุดรธานี ขอนแก่น ร้อยเอ็ด</span></li>
                 </ul>
                 <h5 className=''>อัตราค่าบริการจากสนามบินขอนแก่น</h5>
                 <BasicTable data={airport} />

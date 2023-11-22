@@ -56,7 +56,7 @@ const About = () => {
                         </div>
                         <div className='text-start text dark mt-5'>
                             <h2 className='fw-bold'>เบอร์โทรศัพท์</h2>
-                            <p className='h5 mt-3 lh-base'><i style={{marginRight:".5rem"}} className="bi bi-telephone-fill"></i> <a className="text-decoration-none" href="tel:+66951795925">095-179-5925</a></p>
+                            <p className='h5 mt-3 lh-base'><i style={{marginRight:".5rem"}} className="bi bi-telephone-fill"></i> <a className="text-decoration-none" href="tel:+66952215764">095-221-5764</a></p>
                         </div>
                     </div>
                 </div>

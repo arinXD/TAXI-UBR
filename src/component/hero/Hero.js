@@ -44,7 +44,7 @@ const Hero = () => {
                 <div className="slogan col-12 col-md-5 col-xl-5 text-white">
                     <h1 className="text-start text-white mb-5 text-center" style={{ fontWeight: "bold", fontSize: "2em", letterSpacing: ".065em" }}>&#8220; บริการรถเช่าพร้อมคนขับ &#8221;</h1>
                     <h2 className="text-white mb-5 text-start" style={{ width: "fit-content", margin: "auto" }}>
-                        <span className="d-block mb-3 text-center" style={{ fontSize: ".8em" }}>แท็กซี่ขอนแก่น</span>
+                        <span className="d-block mb-3 text-center" style={{ fontSize: ".8em" }}>ศูนย์แท็กซี่</span>
                         <span className="me-3 mb-2 d-inline-block">
                             <svg style={{ color: "#22c55e" }} width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -131,7 +131,7 @@ const Hero = () => {
                                 </a>
                             </div>
                             <div className='text-start'>
-                                <a className="text-decoration-none text-white" href="tel:0951795925">
+                                <a className="text-decoration-none text-white" href="tel:+66952215764">
                                     <div className='d-flex gap-3 align-items-center h5 mb-0 lh-base p-3' style={{ borderRadius: "8px", fontSize: "1.5em", backgroundColor: "#06C755" }}>
                                         <div className="d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px", }}>
                                             <div className="d-flex align-items-center justify-content-center" style={{ width: "33px", height: "33px", backgroundColor: "white", borderRadius: "8px" }}>
@@ -139,7 +139,7 @@ const Hero = () => {
                                             </div>
                                             {/* <UilPhone UilLine size="40" color="#06C755" /> */}
                                         </div>
-                                        <span className="fw-bold">095-179-5925</span>
+                                        <span className="fw-bold">095-221-5764</span>
                                     </div>
                                 </a>
                             </div>
