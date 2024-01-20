@@ -40,7 +40,7 @@ const Header = (props) => {
                 <ul className={`nav_link ${toggleClassCheck}`} id="nav-menu">
                     {links.map((link) => (
                         <li key={link.label} className={link.class}>
-                            <Link className={((currentURL == link.to) && link.label !== "ติดต่อ") ? 'link-active' : null} to={link.to} onClick={link.label === "ติดต่อ" ? contact : null}>{link.label === "ติดต่อ" ? <button>{link.label}</button> : link.label}</Link>
+                            <Link className={((currentURL === link.to) && link.label !== "ติดต่อ") ? 'link-active' : null} to={link.to} onClick={link.label === "ติดต่อ" ? contact : null}>{link.label === "ติดต่อ" ? <button>{link.label}</button> : link.label}</Link>
                         </li>
                     ))}
                     {/* <li><Link to="/">หน้าหลัก</Link></li>

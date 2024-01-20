@@ -2,7 +2,6 @@ import "../css/hero.css"
 import hero from "../img/marker8.png"
 import whatsApp from "../img/whatAppCut.png"
 import bgVideo1 from "./video/hero_com.mp4";
-import { UilLine,} from '@iconscout/react-unicons'
 
 import { useEffect, useState } from "react"
 
@@ -121,25 +120,27 @@ const Hero = () => {
                     <div className="row align-items-center justify-content-center h-100">
                         <div>
                             <div className='text-start mb-3'>
-                                <a className="text-decoration-none text-white" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">
+                                {/* <a className="text-decoration-none text-white" href="https://line.me/ti/p/2dm3XrAuz3?fbclid=IwAR3K1ezj47AhoW3OfEx-o3QUMUU5YBxCDionC6CC7i-ahmfqAKpzEWekxFQ">
                                     <div className='d-flex gap-3 align-items-center h5 mb-0 lh-base p-3' style={{ borderRadius: "8px", fontSize: "1.5em", backgroundColor: "#06C755" }}>
-                                        {/* <i style={{ color: "#06C755", marginRight: "1.8em" }} className="bi bi-line"></i> */}
                                         <UilLine size="40" color="white" />
                                         <span className="fw-bold">@Snook</span>
 
                                     </div>
+                                </a> */}
+                                <a href="https://lin.ee/LgJ5lkh">
+                                    <img className="w-100 h-auto" src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" border="0" />
                                 </a>
                             </div>
-                            <div className='text-start'>
+                            <div className='text-center'>
                                 <a className="text-decoration-none text-white" href="tel:+66952215764">
-                                    <div className='d-flex gap-3 align-items-center h5 mb-0 lh-base p-3' style={{ borderRadius: "8px", fontSize: "1.5em", backgroundColor: "#06C755" }}>
-                                        <div className="d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px", }}>
-                                            <div className="d-flex align-items-center justify-content-center" style={{ width: "33px", height: "33px", backgroundColor: "white", borderRadius: "8px" }}>
+                                    <div className='d-flex gap-3 align-items-center justify-content-center h5 mb-0 lh-base p-3' style={{ borderRadius: "8px", height:"98.38px", fontSize: "1.5em", backgroundColor: "#00B900" }}>
+                                        <div className="d-flex align-items-center justify-content-center" style={{ width: "40px", }}>
+                                            <div className="d-flex align-items-center justify-content-center" style={{ width: "55px",height:"45px", backgroundColor: "white", borderRadius: "8px" }}>
                                                 <i className="bi bi-telephone-fill" style={{ color: "#06C755" }}></i>
                                             </div>
                                             {/* <UilPhone UilLine size="40" color="#06C755" /> */}
                                         </div>
-                                        <span className="fw-bold">095-221-5764</span>
+                                        <span className="fw-bold h2 mb-0">095-221-5764</span>
                                     </div>
                                 </a>
                             </div>
